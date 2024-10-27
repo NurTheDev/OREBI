@@ -56,9 +56,19 @@ li {
 }
 a {
   text-decoration: none;
-  color: inherit; /* Make links inherit the text color */
+  color: inherit;
+  /*Makelinksinheritthetextcolor*/
   cursor: pointer;
-  transition: color 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+}
+a:hover {
+  color: var(--primary-black);
+  font-weight: var(--font-bold);
 }
 button {
   cursor: pointer;
@@ -98,7 +108,7 @@ img {
   font-weight: var(--font-normal);
   line-height: 30px;
 }
-.productInfo {
+.Info {
   color: var(--gray);
   font-size: var(--small-font);
   font-weight: var(--font-normal);
@@ -117,12 +127,26 @@ img {
   -o-transition: 0.3s;
   border: none;
 }
-.btn1:hover {
+.btn1:hover,
+.btn2:hover {
   transform: scale(0.95);
   -webkit-transform: scale(0.95);
   -moz-transform: scale(0.95);
   -ms-transform: scale(0.95);
   -o-transform: scale(0.95);
+}
+.btn2 {
+  background: var(--primary-black);
+  color: white;
+  padding: 8px 33px;
+  font-weight: var(--font-bold);
+  font-size: var(--small-font);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  border: none;
 }
 /* ~~~~~~~~~~~~~~~~~~ Common CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -161,11 +185,7 @@ nav .navLink:hover {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+
   width: 600px;
 }
 .searchInput:focus {
@@ -178,7 +198,7 @@ nav .navLink:hover {
 /* ~~~~~~~~~~~~~~~~~~ Navbar CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~ Hero Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #heroSection {
-  background: var(--nav-footer);
+  background: #f5f7f9;
 }
 #heroSection .title-modify {
   text-shadow: 1px 1px 5px #767676;
@@ -186,11 +206,15 @@ nav .navLink:hover {
 #heroSection .heroContant {
   row-gap: 33px;
 }
-#heroSection .service {
+#serviceContainer {
+  border: 1px solid #f0f0f0;
+}
+#serviceContainer .service {
   color: var(--primary-black);
   font-size: 24px;
   font-weight: var(--font-bold);
 }
+
 /* ~~~~~~~~~~~~~~~~~~ Hero Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~ Sale Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #sale .contant {
@@ -219,3 +243,37 @@ nav .navLink:hover {
   padding-bottom: 10px;
 }
 /* ~~~~~~~~~~~~~~~~~~ Sale Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~ New Arrivel Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#newArrivals .newProduct:hover .overly {
+  opacity: 1;
+  right: 0;
+}
+#newArrivals .newProductImg {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+#newArrivals .newProduct:hover .newProductImg {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+#newArrivals .overly {
+  right: -150px;
+  opacity: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  bottom: 20%;
+}
+#newArrivals .btn-modify {
+  top: 20px;
+  left: 28px;
+}
+/* ~~~~~~~~~~~~~~~~~~ New Arrivel Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
