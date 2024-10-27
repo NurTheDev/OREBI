@@ -1,3 +1,62 @@
+/* ~~~~~~~~~~~~~~~~~~ Google Font Link ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+/* ~~~~~~~~~~~~~~~~~~ Google Font Link ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~ Common CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 html {
   scroll-behavior: smooth;
 }
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* ~~~ color ~~~~~ */
+  --primary-black: #262626;
+  --primary-bg: #d8d8d8;
+  --light-gray: #767676;
+  --gray: #6d6d6d;
+  --nav-footer: #f5f5f3;
+  /* ~~~ color ~~~~~ */
+  /* ~~~ Font Size ~~~~~ */
+  --heading-1: 49px;
+  --heading-2: 39px;
+  --base-font: 16px;
+  --semi-base: 20px;
+  --small-font: 14px;
+  /* ~~~ Font Size ~~~~~ */
+  /* ~~~ Font weight ~~~~~ */
+  --font-bold: 700;
+  --font-normal: 400;
+  /* ~~~ Font weight ~~~~~ */
+}
+body {
+  font-family: "DM Sans", sans-serif;
+}
+span {
+  display: inline-block;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit; /* Make links inherit the text color */
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+button {
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.heroTitle {
+  font-size: 49px;
+}
+/* ~~~~~~~~~~~~~~~~~~ Common CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
