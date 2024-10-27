@@ -37,6 +37,18 @@ body {
 span {
   display: inline-block;
 }
+p,
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
 ol,
 ul,
 li {
@@ -92,4 +104,86 @@ img {
   font-weight: var(--font-normal);
   line-height: 23px;
 }
+.btn1 {
+  background: var(--primary-black);
+  color: white;
+  padding: 16px 59px;
+  font-weight: var(--font-bold);
+  font-size: var(--small-font);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  border: none;
+}
+.btn1:hover {
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+}
 /* ~~~~~~~~~~~~~~~~~~ Common CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~ Navbar CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+nav .navLink {
+  color: var(--light-gray);
+  font-size: var(--small-font);
+  font-weight: var(--font-normal);
+  line-height: normal;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+nav .navLink:hover {
+  color: var(--primary-black);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  font-weight: var(--font-bold);
+}
+.navbar {
+  background: var(--nav-footer);
+}
+.searchInput {
+  color: #c4c4c4;
+  background: white;
+  padding: 16px 21px;
+  border: none;
+  font-size: var(--small-font);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  width: 600px;
+}
+.searchInput:focus {
+  transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -o-transform: scale(1.04);
+}
+/* ~~~~~~~~~~~~~~~~~~ Navbar CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~ Hero Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#heroSection {
+  background: var(--nav-footer);
+}
+#heroSection .title-modify {
+  text-shadow: 1px 1px 5px #767676;
+}
+#heroSection .heroContant {
+  row-gap: 33px;
+}
+/* ~~~~~~~~~~~~~~~~~~ Hero Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
