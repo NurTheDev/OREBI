@@ -57,6 +57,39 @@ img {
   vertical-align: middle;
 }
 .heroTitle {
-  font-size: 49px;
+  font-size: var(--heading-1);
+  color: var(--primary-black);
+  font-weight: var(--font-bold);
+  line-height: normal;
+}
+.sectionTitle {
+  font-size: var(--heading-2);
+  color: var(--primary-black);
+  font-weight: var(--font-bold);
+  line-height: normal;
+}
+.cardTitle {
+  font-size: var(--semi-base);
+  color: var(--primary-black);
+  font-weight: var(--font-bold);
+  line-height: normal;
+}
+.summery {
+  color: var(--primary-black);
+  font-size: var(--base-font);
+  font-weight: var(--font-normal);
+  line-height: 30px;
+}
+.productInfo {
+  color: var(--light-gray);
+  font-size: var(--base-font);
+  font-weight: var(--font-normal);
+  line-height: 30px;
+}
+.productInfo {
+  color: var(--gray);
+  font-size: var(--small-font);
+  font-weight: var(--font-normal);
+  line-height: 23px;
 }
 /* ~~~~~~~~~~~~~~~~~~ Common CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
