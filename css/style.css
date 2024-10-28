@@ -264,6 +264,7 @@ nav .navLink:hover {
 #special .newProduct:hover .overly {
   opacity: 1;
   right: 0;
+  bottom: -13px;
 }
 #newArrivals .newProductImg,
 #special .newProductImg {
@@ -290,7 +291,8 @@ nav .navLink:hover {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
-  bottom: 90px;
+  bottom: 0;
+  width: 100%;
 }
 #newArrivals .btn-modify,
 #special .btn-modify {
@@ -332,6 +334,10 @@ nav .navLink:hover {
   -moz-transform: scale(0.95);
   -ms-transform: scale(0.95);
   -o-transform: scale(0.95);
+}
+.productImg {
+  max-width: 370px;
+  margin: 0 auto;
 }
 /* ~~~~~~~~~~~~~~~~~~ New Arrivel Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~ Phone Of The Year Section ~~~~~~~~~~~~~~  */

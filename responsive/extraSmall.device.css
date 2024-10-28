@@ -24,7 +24,9 @@
   }
   #sale,
   #newArrivals,
-  #special {
+  #special,
+  #phone,
+  footer {
     margin-top: 60px;
   }
   #sale .contant {
@@ -33,14 +35,6 @@
     padding-bottom: 20px;
   }
   #newArrivals .nextBtn {
-    display: none;
-  }
-  #newArrivals .overly,
-  #special .overly {
-    bottom: 60px;
-  }
-  #newArrivals .btn-modify,
-  #special .btn-modify {
     display: none;
   }
 }

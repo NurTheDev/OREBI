@@ -1,0 +1,33 @@
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  :root {
+    /* ~~~ color ~~~~~ */
+    --primary-black: #262626;
+    --primary-bg: #d8d8d8;
+    --light-gray: #767676;
+    --gray: #6d6d6d;
+    --nav-footer: #f5f5f3;
+    /* ~~~ color ~~~~~ */
+    /* ~~~ Font Size ~~~~~ */
+    --heading-1: 49px;
+    --heading-2: 39px;
+    --base-font: 16px;
+    --semi-base: 20px;
+    --small-font: 14px;
+  }
+  #sale,
+  #newArrivals,
+  #special,
+  #phone,
+  footer {
+    margin-top: 100px;
+  }
+  #sale .contant {
+    row-gap: 10px;
+  }
+  #sale .contant {
+    padding-left: 20px;
+  }
+  #newArrivals .nextBtn {
+    display: none;
+  }
+}
