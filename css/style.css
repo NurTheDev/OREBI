@@ -297,8 +297,7 @@ nav .navLink:hover {
   top: 20px;
   left: 28px;
 }
-#newArrivals .nextBtn,
-#special .nextBtn {
+#newArrivals .nextBtn {
   width: 64px;
   height: 64px;
   background: rgba(0, 0, 0, 0.2);
@@ -319,16 +318,14 @@ nav .navLink:hover {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-#newArrivals .nextBtn-modify1,
-#special .nextBtn-modify1 {
+#newArrivals .nextBtn-modify1 {
   left: -30px;
 }
 #newArrivals .nextBtn-modify2,
 #special .nextBtn-modify2 {
   right: -30px;
 }
-#newArrivals .nextBtn:hover,
-#special .nextBtn:hover {
+#newArrivals .nextBtn:hover {
   background: var(--primary-black);
   transform: scale(0.95);
   -webkit-transform: scale(0.95);
