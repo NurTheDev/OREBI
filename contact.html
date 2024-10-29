@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Contact</title>
 
     <!-- ~~~~~~~~~~~~ Font Awesome Link ~~~~~~~~~~~~~~~ -->
     <link
@@ -52,7 +52,7 @@
     />
     <!-- ~~~~~~~~~~~~ Bootstrap CDN Link ~~~~~~~~~~~~~~~ -->
     <!-- ~~~~~~~~~~~~ Coustom CSS Link ~~~~~~~~~~~~~~~ -->
-    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- ~~~~~~~~~~~~ Coustom CSS Link ~~~~~~~~~~~~~~~ -->
   </head>
@@ -160,13 +160,14 @@
     </section>
     <!-- ~~~~~~~~~~~~~~ Second Navbar ~~~~~~~~~~~~~~ -->
     <main>
-      <section id="about">
+      <!-- ~~~~~~~~~~~ Contact Section ~~~~~~~~~~~~~~ -->
+      <section id="contact">
         <div class="container">
           <div
-            class="aboutSection d-flex flex-column justify-content-between text-center text-lg-start"
+            class="contactSection d-flex flex-column "
           >
-            <div class="aboutTop">
-              <h1 class="heroTitle">About</h1>
+            <div class="aboutTop text-center text-lg-start">
+              <h1 class="heroTitle">Contacts</h1>
               <div
                 class="smallNav d-flex column-gap-2 align-items-center justify-content-center justify-content-lg-start"
               >
@@ -174,84 +175,67 @@
                 <span class="Info"
                   ><i class="fa-duotone fa-solid fa-greater-than"></i
                 ></span>
-                <a href="" class="Info">About</a>
+                <a href="" class="Info">Contacts</a>
               </div>
             </div>
-            <div class="row g-3 aboutContainer">
-              <div class="col-md-6 h-100">
-                <div class="position-relative overflow-hidden">
-                  <picture
-                    ><img
-                      class="aboutImg"
-                      src="images/aboutPage/img2.png"
-                      alt="images/aboutPage/img2.png"
-                  /></picture>
-                  <button class="btn1 aboutBtn-modify position-absolute">
-                    Our Brands
-                  </button>
-                </div>
+            <form
+              action=""
+              class="d-flex flex-column justify-content-between row-gap-2"
+            >
+              <h2 class="sectionTitle mb-5">Fill up a Form</h2>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="cardTitle"
+                  >Name</label
+                >
+                <input
+                  type="email"
+                  class="form-control input-modiy mt-2"
+                  id="exampleFormControlInput1"
+                  placeholder="Your name here"
+                />
               </div>
-              <div class="col-md-6 h-100">
-                <div class="position-relative overflow-hidden">
-                  <picture
-                    ><img
-                      class="aboutImg"
-                      src="images/aboutPage/img1.png"
-                      alt="images/aboutPage/img1.png"
-                  /></picture>
-                  <button class="btn1 aboutBtn-modify position-absolute">
-                    Our Stores
-                  </button>
-                </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="cardTitle"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control input-modiy mt-2"
+                  id="exampleFormControlInput1 "
+                  placeholder="Your email here"
+                />
               </div>
-            </div>
-            <h2 class="aboutDetails">
-              Orebi is one of the world’s leading ecommerce brands and is
-              internationally recognized for celebrating the essence of classic
-              Worldwide cool looking style.
-            </h2>
-            <div class="row g-3 gy-5">
-              <div class="col-lg-4 col-md-6">
-                <div>
-                  <h4 class="aboutDetailsHeading">Our Vision</h4>
-                  <p class="Info mt-2">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an printer
-                    took a galley of type and scrambled it to make a type
-                    specimen book.
-                  </p>
-                </div>
+
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="cardTitle"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control input-modiy mt-2"
+                  id="exampleFormControlTextarea1"
+                  placeholder="Your message here"
+                  rows="3"
+                ></textarea>
               </div>
-              <div class="col-lg-4 col-md-6">
-                <div>
-                  <h4 class="aboutDetailsHeading">Our Story</h4>
-                  <p class="Info mt-2">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an printer
-                    took a galley of type and scrambled it to make a type
-                    specimen book.
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div>
-                  <h4 class="aboutDetailsHeading">Our Brands</h4>
-                  <p class="Info mt-2">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an printer
-                    took a galley of type and scrambled it to make a type
-                    specimen book.
-                  </p>
-                </div>
-              </div>
+              <button class="btn1 contactBtn-modify">Post</button>
+            </form>
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116869.45252691692!2d90.23014489726562!3d23.741302499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b7a55cd36f%3A0xfcc5b021faff43ea!2z4KaV4KeN4Kaw4Ka_4Kef4KeH4Kaf4Ka_4KatIOCmhuCmh-Cmn-CmvyDgpofgpqjgprjgp43gpp_gpr_gpp_gpr_gpongpp8!5e0!3m2!1sbn!2sbd!4v1730216798798!5m2!1sbn!2sbd"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
       </section>
+      <!-- ~~~~~~~~~~~ Contact Section ~~~~~~~~~~~~~~ -->
     </main>
+
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~~~~~~ -->
     <footer>
       <div class="container">
