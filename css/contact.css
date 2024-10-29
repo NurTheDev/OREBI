@@ -190,11 +190,14 @@ nav .navLink:hover {
   width: 100%;
 }
 #contact .contactBtn-modify:hover {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  background: transparent;
+  color: var(--primary-black);
+  border: 1px solid var(--primary-black);
 }
 #contact .contactSection {
   margin-top: 128px;

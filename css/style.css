@@ -143,6 +143,9 @@ img {
   -moz-transform: scale(0.95);
   -ms-transform: scale(0.95);
   -o-transform: scale(0.95);
+  background: transparent;
+  color: var(--primary-black);
+  border: 1px solid var(--primary-black);
 }
 .btn2 {
   background: var(--primary-black);
@@ -328,12 +331,14 @@ nav .navLink:hover {
   right: -30px;
 }
 #newArrivals .nextBtn:hover {
-  background: var(--primary-black);
   transform: scale(0.95);
   -webkit-transform: scale(0.95);
   -moz-transform: scale(0.95);
   -ms-transform: scale(0.95);
   -o-transform: scale(0.95);
+  background: transparent;
+  color: var(--primary-black);
+  border: 1px solid var(--primary-black);
 }
 .productImg {
   max-width: 370px;
