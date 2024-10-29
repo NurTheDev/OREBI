@@ -1,0 +1,40 @@
+@media (max-width: 575.98px) {
+  :root {
+    /* ~~~ color ~~~~~ */
+    --primary-black: #262626;
+    --primary-bg: #d8d8d8;
+    --light-gray: #767676;
+    --gray: #6d6d6d;
+    --nav-footer: #f5f5f3;
+    /* ~~~ color ~~~~~ */
+    /* ~~~ Font Size ~~~~~ */
+    --heading-1: 45px;
+    --heading-2: 30px;
+    --base-font: 16px;
+    --semi-base: 20px;
+    --small-font: 14px;
+  }
+  nav .coustomNav {
+    padding: 20px 0;
+    background: var(--nav-footer);
+    margin: 10px 0;
+  }
+  .searchInput {
+    width: 350px;
+  }
+  #sale,
+  #newArrivals,
+  #special,
+  #phone,
+  footer {
+    margin-top: 60px;
+  }
+  #sale .contant {
+    row-gap: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  #newArrivals .nextBtn {
+    display: none;
+  }
+}
