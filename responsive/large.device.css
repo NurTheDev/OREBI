@@ -53,10 +53,21 @@
     row-gap: 50px;
     margin-top: 80px;
   }
-  .loginDetails-modify {
+  .loginDetails-modify,
+  #signUp .signUpDetails-modify {
     width: 75%;
   }
   /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
   /*            Login Page end                     */
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  /*            SignUp Page Start                  */
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  #signUp .signUpContainer {
+    row-gap: 40px;
+    margin-top: 80px;
+  }
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  /*            SignUp Page end                    */
   /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 }
