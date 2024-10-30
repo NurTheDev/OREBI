@@ -205,6 +205,10 @@ nav .navLink:hover {
 #password .input-modiy {
   padding: 17px 10px;
   color: var(--light-gray);
+  border-bottom: 1px solid #f0f0f0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 #signUp .input-modiy:focus,
 #newCustomer .input-modiy:focus,

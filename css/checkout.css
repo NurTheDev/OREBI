@@ -60,7 +60,6 @@ li {
 a {
   text-decoration: none;
   color: inherit;
-  /*Makelinksinheritthetextcolor*/
   cursor: pointer;
   transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
@@ -184,23 +183,21 @@ nav .navLink:hover {
   -o-transform: scale(1.04);
 }
 /* ~~~~~~~~~~~~~~~~~~ Navbar CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~~~~~ Login Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-#login .loginContainer {
-  row-gap: 62px;
-  margin-top: 128px;
+/* ~~~~~~~~~~~~~~~~~~ Checkout Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#checkout {
+  padding-top: 128px;
 }
-#login form {
-  border-top: 1px solid #f0f0f0;
-  border-bottom: 1px solid #f0f0f0;
+#checkout .link-modify {
+  font-weight: var(--font-bold);
 }
-.loginDetails-modify {
-  width: 50%;
+#checkout .link-modify:hover {
+  text-decoration: underline;
 }
-#login .loginBtn-modify {
-  max-width: 200px;
-  width: 100%;
+#checkout .mp-modify {
+  margin: 120px 0;
 }
-#login .input-modiy {
+
+#checkout .input-modiy {
   padding: 17px 10px;
   color: var(--light-gray);
   border-bottom: 1px solid #f0f0f0;
@@ -208,21 +205,11 @@ nav .navLink:hover {
   border-left: none;
   border-right: none;
 }
-#login .input-modiy:focus {
+#checkout .input-modiy:focus {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border: none;
 }
-#login .loginBtn-modify:hover {
-  transform: scale(0.95);
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  -o-transform: scale(0.95);
-  background: transparent;
-  color: var(--primary-black);
-  border: 1px solid var(--primary-black);
-}
-/* ~~~~~~~~~~~~~~~~~~ Login Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~ Checkout Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~  */
 footer {

@@ -206,6 +206,10 @@ nav .navLink:hover {
 #contact .input-modiy {
   padding: 17px 10px;
   color: var(--light-gray);
+  border-bottom: 1px solid #f0f0f0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 #contact .input-modiy:focus {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
