@@ -177,6 +177,20 @@ nav .navLink:hover {
 #account .accountContainer {
   margin-top: 128px 0;
 }
+#account .accountWrapper,
+#account .accountContainer {
+  margin-top: 128px;
+}
+#account .aside li {
+  padding: 19px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+#account .aside li:first-child {
+  padding-top: 0;
+}
+#account .link-modify:hover {
+  text-decoration: underline;
+}
 /* ~~~~~~~~~~~~~~ My Account Section ~~~~~~~~~~~~~~  */
 /* ~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~  */
 footer {
