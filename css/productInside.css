@@ -1,0 +1,407 @@
+/* ~~~~~~~~~~~~~~~~~~ Google Font Link ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+/* ~~~~~~~~~~~~~~~~~~ Google Font Link ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~ Common CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* ~~~ color ~~~~~ */
+  --primary-black: #262626;
+  --primary-bg: #d8d8d8;
+  --light-gray: #767676;
+  --gray: #6d6d6d;
+  --nav-footer: #f5f5f3;
+  /* ~~~ color ~~~~~ */
+  /* ~~~ Font Size ~~~~~ */
+  --heading-1: 49px;
+  --heading-2: 39px;
+  --base-font: 16px;
+  --semi-base: 20px;
+  --small-font: 14px;
+  /* ~~~ Font Size ~~~~~ */
+  /* ~~~ Font weight ~~~~~ */
+  --font-bold: 700;
+  --font-normal: 400;
+  /* ~~~ Font weight ~~~~~ */
+}
+body {
+  font-family: "DM Sans", sans-serif;
+}
+span {
+  display: inline-block;
+}
+p,
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+}
+a:hover {
+  color: var(--primary-black);
+  font-weight: var(--font-bold);
+}
+button {
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.heroTitle {
+  font-size: var(--heading-1);
+  color: var(--primary-black);
+  font-weight: var(--font-bold);
+  line-height: normal;
+}
+.sectionTitle {
+  font-size: var(--heading-2);
+  color: var(--primary-black);
+  font-weight: var(--font-bold);
+  line-height: normal;
+}
+.cardTitle {
+  font-size: var(--semi-base);
+  color: var(--primary-black);
+  font-weight: var(--font-bold);
+  line-height: normal;
+}
+.footerTitle {
+  color: var(--primary-black);
+  font-weight: var(--font-bold);
+  line-height: normal;
+  font-size: var(--base-font);
+}
+.summery {
+  color: var(--primary-black);
+  font-size: var(--base-font);
+  font-weight: var(--font-normal);
+  line-height: 30px;
+}
+.productInfo {
+  color: var(--light-gray);
+  font-size: var(--base-font);
+  font-weight: var(--font-normal);
+  line-height: 30px;
+}
+.Info {
+  color: var(--gray);
+  font-size: var(--small-font);
+  font-weight: var(--font-normal);
+  line-height: 23px;
+}
+.btn1 {
+  background: var(--primary-black);
+  color: white;
+  padding: 16px 0;
+  font-weight: var(--font-bold);
+  font-size: var(--small-font);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  border: none;
+}
+/* ~~~~~~~~~~~~~~~~~~ Common CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~ Navbar CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+nav .navLink {
+  color: var(--light-gray);
+  font-size: var(--small-font);
+  font-weight: var(--font-normal);
+  line-height: normal;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+nav .navLink:hover {
+  color: var(--primary-black);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  font-weight: var(--font-bold);
+}
+.navbar {
+  background: var(--nav-footer);
+}
+.input-group {
+  max-width: 600px;
+  width: 100%;
+}
+.searchBtn {
+  right: 0;
+}
+.searchInput {
+  color: #c4c4c4;
+  background: white;
+  padding: 16px 21px;
+  border: none;
+  font-size: var(--small-font);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+
+  width: 600px;
+}
+.searchInput:focus {
+  transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -o-transform: scale(1.04);
+}
+/* ~~~~~~~~~~~~~~~~~~ Navbar CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~ Porduct img Section  ~~~~~~~~~~~~~~  */
+#productImg {
+  padding-top: 128px;
+}
+#productImg .productDetailsContainer {
+  width: 50%;
+}
+#productImg .quality {
+  row-gap: 30px;
+  margin-top: 30px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 24px;
+}
+#productImg .quality .colorSection {
+  column-gap: 50px;
+}
+#productImg .quality .colorPick div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  cursor: pointer;
+}
+#productImg .quality .colorPick div:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+#productImg .quality .colorPick .color1 {
+  background: #000;
+  opacity: 0.1973;
+}
+#productImg .quality .colorPick .color2 {
+  background: #ff8686;
+}
+#productImg .quality .colorPick .color3 {
+  background: #7ed321;
+  opacity: 0.1973;
+}
+#productImg .quality .colorPick .color4 {
+  background: #b6b6b6;
+  opacity: 0.1973;
+}
+#productImg .quality .colorPick .color5 {
+  background: #15cba5;
+  opacity: 0.1973;
+}
+#productImg .productPrice {
+  row-gap: 16px;
+  margin-top: 90px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 24px;
+}
+#productImg .sizeWraper {
+  max-width: 300px;
+  width: 100%;
+  column-gap: 70px;
+}
+#productImg .sizeWraper label {
+  margin-right: 70px;
+}
+#productImg .productImgs {
+  margin-top: 128px;
+}
+.dropdown-menu {
+  --bs-dropdown-min-width: 3rem;
+}
+#productImg .cartItem {
+  column-gap: 10px;
+  max-width: 140px;
+  width: 100%;
+}
+#productImg .cartItem-modify {
+  border: 1px solid #f0f0f0;
+  padding: 10px 21px;
+  width: 50%;
+  text-align: center;
+}
+#productImg .cartBtn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+#productImg .cartBtn:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+#productImg .cartItem input {
+  border: none;
+  text-align: center;
+  margin-left: 10px;
+}
+#productImg .input-modiy {
+  padding: 8px 10px;
+  color: var(--light-gray);
+  border-bottom: 1px solid #f0f0f0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+#productImg .input-modiy:focus {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: none;
+}
+#productImg .status {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 24px 0;
+  column-gap: 27px;
+}
+#productImg .btnContainer {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 30px 0;
+}
+#productImg .btn-modify {
+  max-width: 200px;
+  width: 100%;
+}
+#productImg .btn-modify:hover {
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  background: transparent;
+  color: var(--primary-black);
+  border: 1px solid var(--primary-black);
+}
+.accordion {
+  padding-top: 24px;
+  --bs-accordion-border-color: none;
+  --bs-accordion-border-width: 1px;
+}
+.accordion-button::after {
+  background-image: url("../images/plus.svg");
+  background-size: 70%;
+}
+#review {
+  padding: 128px 0;
+}
+#review .heading {
+  column-gap: 62px;
+}
+#review .clientReview {
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 22px 0;
+}
+#review .btn-modify {
+  max-width: 200px;
+  width: 100%;
+}
+#review .btn-modify:hover {
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  background: transparent;
+  color: var(--primary-black);
+  border: 1px solid var(--primary-black);
+}
+#review .input-modiy {
+  padding: 17px 10px;
+  color: var(--light-gray);
+  border-bottom: 1px solid #f0f0f0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+#review .input-modiy:focus {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: none;
+}
+/* ~~~~~~~~~~~~~~ Porduct img Section ~~~~~~~~~~~~~~  */
+/* ~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~  */
+footer {
+  background: var(--nav-footer);
+  padding: 55px 0;
+  margin-top: 128px;
+}
+footer .footerLogo {
+  width: 35%;
+}
+footer .socialApp {
+  font-size: 20px;
+  margin-right: 15px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+footer .socialApp:hover {
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  color: #767676;
+}
+/* ~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~  */

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Inside</title>
+
+    <!-- ~~~~~~~~~~~~ Font Awesome Link ~~~~~~~~~~~~~~~ -->
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-3b124ff0e0d7a67cd8c995d0aeb1d15a.css?vsn=d"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    />
+    <!-- ~~~~~~~~~~~~ Font Awesome Link ~~~~~~~~~~~~~~~ -->
+    <!-- ~~~~~~~~~~~~ Bootstrap CDN Link ~~~~~~~~~~~~~~~ -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- ~~~~~~~~~~~~ Bootstrap CDN Link ~~~~~~~~~~~~~~~ -->
+    <!-- ~~~~~~~~~~~~ Coustom CSS Link ~~~~~~~~~~~~~~~ -->
+    <link rel="stylesheet" href="css/productInside.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- ~~~~~~~~~~~~ Coustom CSS Link ~~~~~~~~~~~~~~~ -->
+  </head>
+  <body class="bg-white">
+    <!-- ~~~~~~~~~~~~~ First Navbar ~~~~~~~~~~~~~ -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="images/Logo.png" alt=""
+          /></a>
+          <!-- toogle Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- toogle Button -->
+          <div
+            class="collapse navbar-collapse coustomNav"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav m-auto gap-3">
+              <a class="navLink ps-4 ps-lg-0">Home</a>
+              <a class="navLink ps-4 ps-lg-0">Shop</a>
+              <a class="navLink ps-4 ps-lg-0">About</a>
+              <a class="navLink ps-4 ps-lg-0">Contacts</a>
+              <a class="navLink ps-4 ps-lg-0">Journal</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ~~~~~~~~~~~~~ First Navbar ~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~ Second Navbar ~~~~~~~~~~~~~~ -->
+    <section class="navbar">
+      <div class="container">
+        <div
+          class="navbarSection d-flex flex-column flex-lg-row justify-content-between align-items-center w-100 row-gap-3 row-gap-lg-0"
+        >
+          <div class="category">
+            <div class="dropdown">
+              <a
+                class="btn d-flex column-gap-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span><i class="fa-solid fa-bars-sort"></i></span>
+                <p>Shop by Category</p>
+              </a>
+              <ul class="footerNavbar mt-3 dropdown-menu">
+                <li><a class="dropdown-item" href="">Category 1</a></li>
+                <li><a class="dropdown-item" href="">Category 2</a></li>
+                <li><a class="dropdown-item" href="">Category 3</a></li>
+                <li><a class="dropdown-item" href="">Category 4</a></li>
+                <li><a class="dropdown-item" href="">Category 5</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="search">
+            <div
+              class="input-group position-relative d-flex align-items-center"
+            >
+              <input
+                type="text"
+                class="searchInput"
+                placeholder="Search Products"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn position-absolute searchBtn"
+                type="button"
+                id="button-addon2"
+              >
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="chart d-flex align-items-center">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span><i class="fa-solid fa-user"></i></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">User 1</a></li>
+                <li><a class="dropdown-item" href="#">User 2</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">User 3</a>
+                </li>
+              </ul>
+            </div>
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~ Second Navbar ~~~~~~~~~~~~~~ -->
+    <main>
+      <section id="productImg">
+        <div class="container">
+          <div class="productImgContainer">
+            <div class="productTop text-center text-lg-start">
+              <h1 class="heroTitle">Products Inside</h1>
+              <div
+                class="smallNav d-flex column-gap-2 align-items-center justify-content-center justify-content-lg-start mt-3"
+              >
+                <a href="" class="Info">Home</a>
+                <span class="Info"
+                  ><i class="fa-duotone fa-solid fa-greater-than"></i
+                ></span>
+                <a href="" class="Info">Product</a>
+              </div>
+            </div>
+            <div class="row gy-4 productImgs">
+              <div class="col-md-6">
+                <picture
+                  ><img src="images/product1.png" alt="images/product1.png"
+                /></picture>
+              </div>
+              <div class="col-md-6">
+                <picture
+                  ><img src="images/product2.png" alt="images/product2.png"
+                /></picture>
+              </div>
+              <div class="col-md-6">
+                <picture
+                  ><img src="images/product3.png" alt="images/product3.png"
+                /></picture>
+              </div>
+              <div class="col-md-6">
+                <picture
+                  ><img src="images/product4.png" alt="images/product4.png"
+                /></picture>
+              </div>
+            </div>
+            <div class="productDetailsContainer">
+              <div class="productPrice d-flex flex-column">
+                <h2 class="sectionTitle">Product</h2>
+                <div class="rating d-flex align-items-center column-gap-4">
+                  <p>
+                    <span
+                      ><i
+                        class="fa-sharp fa-solid fa-star"
+                        style="color: #ffd43b"
+                      ></i
+                    ></span>
+                    <span
+                      ><i
+                        class="fa-sharp fa-solid fa-star"
+                        style="color: #ffd43b"
+                      ></i
+                    ></span>
+                    <span
+                      ><i
+                        class="fa-sharp fa-solid fa-star"
+                        style="color: #ffd43b"
+                      ></i
+                    ></span>
+                    <span
+                      ><i
+                        class="fa-sharp fa-solid fa-star"
+                        style="color: #ffd43b"
+                      ></i
+                    ></span>
+                    <span
+                      ><i
+                        class="fa-sharp fa-solid fa-star"
+                        style="color: #ffd43b"
+                      ></i
+                    ></span>
+                  </p>
+                  <a class="Info">1 Review</a>
+                </div>
+                <div class="price mt-2 d-flex align-items-center column-gap-4">
+                  <p class="productInfo"><del>$88.00</del></p>
+                  <p class="cardTitle">$44.00</p>
+                </div>
+              </div>
+              <div class="quality d-flex flex-column">
+                <div class="colorSection d-flex align-items-center">
+                  <p class="footerTitle">COLOR:</p>
+                  <div class="colorPick d-flex align-items-center column-gap-3">
+                    <div class="color1"></div>
+                    <div class="color2"></div>
+                    <div class="color3"></div>
+                    <div class="color4"></div>
+                    <div class="color5"></div>
+                  </div>
+                </div>
+                <div
+                  class="btn-group sizeWraper d-flex column-gap-1 align-items-center"
+                >
+                  <label for="size d-flex " class="footerTitle">SIZE:</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="size"
+                    placeholder="36"
+                  />
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">32</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">34</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">36</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">38</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="quantity d-flex align-items-center column-gap-4">
+                  <p class="footerTitle">QUANTITY:</p>
+                  <div
+                    class="cartItem cartItem-modify d-flex align-items-center"
+                  >
+                    <button class="cartBtn productInfo d-none d-md-block">
+                      <span><i class="fa-regular fa-minus"></i></span>
+                    </button>
+                    <input type="number" value="1" min="1" max="20" />
+                    <button class="cartBtn productInfo d-none d-md-block">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="status d-flex align-items-center">
+                <p class="footerTitle">STATUS:</p>
+                <p class="productInfo">In stock</p>
+              </div>
+              <div
+                class="btnContainer d-flex flex-column flex-md-row row-gap-2 column-gap-3"
+              >
+                <button class="btn1 btn-modify">Add to Wish List</button>
+                <button class="btn1 btn-modify">Add to Cart</button>
+              </div>
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item pb-3">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed footerTitle"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo"
+                    >
+                      FEATURES & DETAILS
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseOne"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body productInfo">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed footerTitle"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo"
+                    >
+                      SHIPPING & RETURNS
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseTwo"
+                    class="accordion-collapse collapse show"
+                  >
+                    <div class="accordion-body productInfor">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="review">
+        <div class="container">
+          <div class="reviewContainer">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="reviewTop">
+                  <div class="heading d-flex align-items-center">
+                    <h4 class="cardTitle">Description</h4>
+                    <h4 class="cardTitle">Reviews (1)</h4>
+                  </div>
+                  <p class="Info mt-5">1 review for Product</p>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="clientReview mt-4">
+                  <div class="name d-flex align-items-center column-gap-4 pb-2">
+                    <p class="summery">John Ford</p>
+                    <p>
+                      <span
+                        ><i
+                          class="fa-sharp fa-solid fa-star"
+                          style="color: #ffd43b"
+                        ></i
+                      ></span>
+                      <span
+                        ><i
+                          class="fa-sharp fa-solid fa-star"
+                          style="color: #ffd43b"
+                        ></i
+                      ></span>
+                      <span
+                        ><i
+                          class="fa-sharp fa-solid fa-star"
+                          style="color: #ffd43b"
+                        ></i
+                      ></span>
+                      <span
+                        ><i
+                          class="fa-sharp fa-solid fa-star"
+                          style="color: #ffd43b"
+                        ></i
+                      ></span>
+                      <span
+                        ><i
+                          class="fa-sharp fa-solid fa-star"
+                          style="color: #ffd43b"
+                        ></i
+                      ></span>
+                    </p>
+                  </div>
+                  <p class="productInfo pt-3">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-8 col-xl-6">
+                <form
+                  action=""
+                  class="d-flex flex-column justify-content-between row-gap-2 mt-5"
+                >
+                  <h4 class="cardTitle mb-5">Add a Review</h4>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="footerTitle"
+                      >Name</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control input-modiy mt-2"
+                      id="exampleFormControlInput1"
+                      placeholder="Your name here"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="footerTitle"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control input-modiy mt-2"
+                      id="exampleFormControlInput1 "
+                      placeholder="Your email here"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="footerTitle"
+                      >Review</label
+                    >
+                    <textarea
+                      class="form-control input-modiy mt-2"
+                      id="exampleFormControlTextarea1"
+                      placeholder="Your review here"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <button class="btn1 btn-modify">Post</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~~~~~~ -->
+    <footer>
+      <div class="container">
+        <div
+          class="row justify-content-around justify-content-lg-between text-center text-lg-start gy-4 gy-lg-0"
+        >
+          <div class="col-lg-2 col-6 col-md-4">
+            <div class="footerNav">
+              <h4 class="footerTitle">Menu</h4>
+              <ul class="footerNavbar mt-3">
+                <li><a class="Info" href="">Home</a></li>
+                <li><a class="Info" href="">Shop</a></li>
+                <li><a class="Info" href="">About</a></li>
+                <li><a class="Info" href="">Contact</a></li>
+                <li><a class="Info" href="">Journal</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-6 col-md-4">
+            <div class="footerNav">
+              <h4 class="footerTitle">SHOP</h4>
+              <ul class="footerNavbar mt-3">
+                <li><a class="Info" href="">Category 1</a></li>
+                <li><a class="Info" href="">Category 2</a></li>
+                <li><a class="Info" href="">Category 3</a></li>
+                <li><a class="Info" href="">Category 4</a></li>
+                <li><a class="Info" href="">Category 5</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-6 col-md-4">
+            <div class="footerNav">
+              <h4 class="footerTitle">HELP</h4>
+              <ul class="footerNavbar mt-3">
+                <li><a class="Info" href="">Privacy Policy</a></li>
+                <li><a class="Info" href="">Terms & Conditions</a></li>
+                <li><a class="Info" href="">Special E-shop</a></li>
+                <li><a class="Info" href="">Shipping</a></li>
+                <li><a class="Info" href="">Secure Payments</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-6 col-md-4">
+            <div class="footerNav">
+              <h4 class="footerTitle">(052) 611-5711 company@domain.com</h4>
+              <p class="Info mt-3">575 Crescent Ave. Quakertown, PA 18951</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-8">
+            <div class="text-center">
+              <a
+                ><img
+                  class="footerLogo mt-md-5 mt-lg-0"
+                  src="images/Logo.png"
+                  alt="images/Logo.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footerEnd mt-5 d-flex justify-content-between">
+          <div class="social">
+            <span class="socialApp"
+              ><i class="fa-brands fa-facebook-f"></i></span
+            ><span class="socialApp"
+              ><i class="fa-brands fa-linkedin-in"></i></span
+            ><span class="socialApp"
+              ><i class="fa-brands fa-instagram"></i
+            ></span>
+          </div>
+          <p class="Info text-end w-75 w-lg-100">
+            2020 Orebi Minimal eCommerce Figma Template by Adveits
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~~~~~~ -->
+    <!-- ~~~~~~~~~~~~ Bootstrap CDN Link ~~~~~~~~~~~~~~~ -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ~~~~~~~~~~~~ Bootstrap CDN Link ~~~~~~~~~~~~~~~ -->
+  </body>
+</html>
