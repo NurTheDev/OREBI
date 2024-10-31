@@ -181,9 +181,9 @@
                 <a href="" class="Info">Product</a>
               </div>
             </div>
-            <div class="row">
+            <div class="row g-3 g-lg-5">
               <div class="col-lg-3">
-                <aside>
+                <aside class="row mb-5 mb-lg-0">
                   <div class="categoryWrapper">
                     <h4 class="cardTitle">Shop by Category</h4>
                     <ul class="category mt-4">
@@ -201,14 +201,852 @@
                         </select>
                       </li>
                       <li><a class="productInfo" href="">Category 2</a></li>
-                      <li><a class="productInfo" href="">Category 3 </a></li>
+                      <li>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>
+                            <a class="productInfo" href="">Category 3</a>
+                          </option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </li>
                       <li><a class="productInfo" href="">Category 4</a></li>
                       <li><a class="productInfo" href="">Category 5</a></li>
                     </ul>
                   </div>
+                  <div class="col-md-4 col-lg-12">
+                    <div class="dropdown mt-5 colorWrapper">
+                      <a
+                        class="dropdown-toggle cardTitle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Shop by Color
+                      </a>
+
+                      <ul
+                        class="position-relative border-0 dropdown-menu w-100 category"
+                      >
+                        <li>
+                          <a
+                            class="productInfo color color1 dropdown-item"
+                            href=""
+                            >Color 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="productInfo dropdown-item color2 color"
+                            href=""
+                            >Color 2</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="productInfo dropdown-item color color3"
+                            href=""
+                            >Color 2</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="productInfo dropdown-item color color4"
+                            href=""
+                            >Color 4</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="productInfo dropdown-item color color5"
+                            href=""
+                            >Color 5</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-lg-12">
+                    <div class="dropdown mt-5 brandWrapper">
+                      <a
+                        class="dropdown-toggle cardTitle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Shop by Brand
+                      </a>
+
+                      <ul
+                        class="position-relative border-0 dropdown-menu w-100 category"
+                      >
+                        <li>
+                          <a class="productInfo dropdown-item" href=""
+                            >Brand 1</a
+                          >
+                        </li>
+                        <li>
+                          <a class="productInfo dropdown-item" href=""
+                            >Brand 2</a
+                          >
+                        </li>
+                        <li>
+                          <a class="productInfo dropdown-item" href=""
+                            >Brand 3</a
+                          >
+                        </li>
+                        <li>
+                          <a class="productInfo dropdown-item" href=""
+                            >Brand 4</a
+                          >
+                        </li>
+                        <li>
+                          <a class="productInfo dropdown-item" href=""
+                            >Brand 5</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-lg-12">
+                    <div class="dropdown mt-5 priceWrapper">
+                      <a
+                        class="dropdown-toggle cardTitle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Shop by Price
+                      </a>
+
+                      <ul
+                        class="position-relative border-0 dropdown-menu w-100 category"
+                      >
+                        <li>
+                          <a class="productInfo dropdown-item" href=""
+                            >$0.00 - $9.99</a
+                          >
+                        </li>
+                        <li>
+                          <a class="productInfo dropdown-item" href=""
+                            >$10.00 - $19.99</a
+                          >
+                        </li>
+                        <li>
+                          <a class="productInfo dropdown-item" href=""
+                            >$20.00 - $29.99</a
+                          >
+                        </li>
+                        <li>
+                          <a class="productInfo dropdown-item" href=""
+                            >$30.00 - $39.99</a
+                          >
+                        </li>
+                        <li>
+                          <a class="productInfo dropdown-item" href=""
+                            >$40.00 - $69.99</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </aside>
               </div>
-              <div class="col-lg-9"></div>
+              <div class="col-lg-9">
+                <div class="shortedWrapper ms-auto">
+                  <div class="shorted d-flex align-items-center column-gap-3">
+                    <p class="prductInfo">Sort by:</p>
+                    <!-- Featured -->
+                    <div class="btn-group">
+                      <input
+                        type="number"
+                        class="form-control"
+                        placeholder="Featured"
+                      />
+                      <button
+                        type="button"
+                        class="btn dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      class="btn-group sizeWraper d-flex column-gap-1 align-items-center"
+                    >
+                      <label for="size " class="productInfo">size</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="size"
+                        placeholder="36"
+                      />
+                      <button
+                        type="button"
+                        class="btn dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">32</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">34</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">36</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">38</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="row productItemsContainer text-center text-md-start"
+                >
+                  <div class="col-lg-4 col-md-6">
+                    <div class="newProduct overflow-hidden">
+                      <div class="productImg position-relative">
+                        <button class="btn2 position-absolute btn-modify">
+                          New
+                        </button>
+                        <picture
+                          ><img
+                            class="newProductImg"
+                            src="images/HomePage/newArrivals/new1.png"
+                            alt="images/HomePage/newArrivals/new1.png"
+                        /></picture>
+                        <div
+                          class="overly position-absolute bg-white w-100 px-3 py-3"
+                        >
+                          <div
+                            class="d-flex flex-column row-gap-2 align-items-end"
+                          >
+                            <div>
+                              <a>Add to Wish List</a>
+                              <span><i class="fa-solid fa-heart"></i></span>
+                            </div>
+                            <div>
+                              <a>Compare</a>
+                              <span
+                                ><i class="fa-sharp fa-solid fa-rotate"></i
+                              ></span>
+                            </div>
+                            <div>
+                              <a>Add to Cart</a>
+                              <span
+                                ><i
+                                  class="fa-sharp fa-solid fa-cart-shopping"
+                                ></i
+                              ></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="d-flex justify-content-around justify-content-lg-between column-gap-1 mt-3"
+                        >
+                          <h3 class="cardTitle">Basic Crew Neck Tee</h3>
+                          <p class="productInfo">$44.00</p>
+                        </div>
+                        <p class="productInfo mt-1">Black</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="newProduct overflow-hidden">
+                      <div class="productImg position-relative">
+                        <button class="btn2 position-absolute btn-modify">
+                          10%
+                        </button>
+                        <picture
+                          ><img
+                            class="newProductImg"
+                            src="images/HomePage/newArrivals/new2.png"
+                            alt="images/HomePage/newArrivals/new2.png"
+                        /></picture>
+                        <div
+                          class="overly position-absolute bg-white w-100 px-3 py-3"
+                        >
+                          <div
+                            class="d-flex flex-column row-gap-2 align-items-end"
+                          >
+                            <div>
+                              <a>Add to Wish List</a>
+                              <span><i class="fa-solid fa-heart"></i></span>
+                            </div>
+                            <div>
+                              <a>Compare</a>
+                              <span
+                                ><i class="fa-sharp fa-solid fa-rotate"></i
+                              ></span>
+                            </div>
+                            <div>
+                              <a>Add to Cart</a>
+                              <span
+                                ><i
+                                  class="fa-sharp fa-solid fa-cart-shopping"
+                                ></i
+                              ></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="d-flex justify-content-around justify-content-lg-between column-gap-1 mt-3"
+                        >
+                          <h3 class="cardTitle">Basic Crew Neck Tee</h3>
+                          <p class="productInfo">$44.00</p>
+                        </div>
+                        <p class="productInfo mt-1">Black</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="newProduct overflow-hidden">
+                      <div class="productImg position-relative">
+                        <picture
+                          ><img
+                            class="newProductImg"
+                            src="images/HomePage/newArrivals/new3.png"
+                            alt="images/HomePage/newArrivals/new3.png"
+                        /></picture>
+                        <div
+                          class="overly position-absolute bg-white w-100 px-3 py-3"
+                        >
+                          <div
+                            class="d-flex flex-column row-gap-2 align-items-end"
+                          >
+                            <div>
+                              <a>Add to Wish List</a>
+                              <span><i class="fa-solid fa-heart"></i></span>
+                            </div>
+                            <div>
+                              <a>Compare</a>
+                              <span
+                                ><i class="fa-sharp fa-solid fa-rotate"></i
+                              ></span>
+                            </div>
+                            <div>
+                              <a>Add to Cart</a>
+                              <span
+                                ><i
+                                  class="fa-sharp fa-solid fa-cart-shopping"
+                                ></i
+                              ></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="d-flex justify-content-around justify-content-lg-between column-gap-1 mt-3"
+                        >
+                          <h3 class="cardTitle">Basic Crew Neck Tee</h3>
+                          <p class="productInfo">$44.00</p>
+                        </div>
+                        <p class="productInfo mt-1">Black</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="newProduct overflow-hidden">
+                      <div class="productImg position-relative">
+                        <picture
+                          ><img
+                            class="newProductImg"
+                            src="images/HomePage/newArrivals/new4.png"
+                            alt="images/HomePage/newArrivals/new4.png"
+                        /></picture>
+                        <div
+                          class="overly position-absolute bg-white w-100 px-3 py-3"
+                        >
+                          <div
+                            class="d-flex flex-column row-gap-2 align-items-end"
+                          >
+                            <div>
+                              <a>Add to Wish List</a>
+                              <span><i class="fa-solid fa-heart"></i></span>
+                            </div>
+                            <div>
+                              <a>Compare</a>
+                              <span
+                                ><i class="fa-sharp fa-solid fa-rotate"></i
+                              ></span>
+                            </div>
+                            <div>
+                              <a>Add to Cart</a>
+                              <span
+                                ><i
+                                  class="fa-sharp fa-solid fa-cart-shopping"
+                                ></i
+                              ></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="d-flex justify-content-around justify-content-lg-between column-gap-1 mt-3"
+                        >
+                          <h3 class="cardTitle">Basic Crew Neck Tee</h3>
+                          <p class="productInfo">$44.00</p>
+                        </div>
+                        <p class="productInfo mt-1">Black</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="newProduct overflow-hidden">
+                      <div class="productImg position-relative">
+                        <button class="btn2 position-absolute btn-modify">
+                          New
+                        </button>
+                        <picture
+                          ><img
+                            class="newProductImg"
+                            src="images/HomePage/newArrivals/new5.png"
+                            alt="images/HomePage/newArrivals/new5.png"
+                        /></picture>
+                        <div
+                          class="overly position-absolute bg-white w-100 px-3 py-3"
+                        >
+                          <div
+                            class="d-flex flex-column row-gap-2 align-items-end"
+                          >
+                            <div>
+                              <a>Add to Wish List</a>
+                              <span><i class="fa-solid fa-heart"></i></span>
+                            </div>
+                            <div>
+                              <a>Compare</a>
+                              <span
+                                ><i class="fa-sharp fa-solid fa-rotate"></i
+                              ></span>
+                            </div>
+                            <div>
+                              <a>Add to Cart</a>
+                              <span
+                                ><i
+                                  class="fa-sharp fa-solid fa-cart-shopping"
+                                ></i
+                              ></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="d-flex justify-content-around justify-content-lg-between column-gap-1 mt-3"
+                        >
+                          <h3 class="cardTitle">Basic Crew Neck Tee</h3>
+                          <p class="productInfo">$44.00</p>
+                        </div>
+                        <p class="productInfo mt-1">Black</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="newProduct overflow-hidden">
+                      <div class="productImg position-relative">
+                        <picture
+                          ><img
+                            class="newProductImg"
+                            src="images/HomePage/newArrivals/new6.png"
+                            alt="images/HomePage/newArrivals/new6.png"
+                        /></picture>
+                        <div
+                          class="overly position-absolute bg-white w-100 px-3 py-3"
+                        >
+                          <div
+                            class="d-flex flex-column row-gap-2 align-items-end"
+                          >
+                            <div>
+                              <a>Add to Wish List</a>
+                              <span><i class="fa-solid fa-heart"></i></span>
+                            </div>
+                            <div>
+                              <a>Compare</a>
+                              <span
+                                ><i class="fa-sharp fa-solid fa-rotate"></i
+                              ></span>
+                            </div>
+                            <div>
+                              <a>Add to Cart</a>
+                              <span
+                                ><i
+                                  class="fa-sharp fa-solid fa-cart-shopping"
+                                ></i
+                              ></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="d-flex justify-content-around justify-content-lg-between column-gap-1 mt-3"
+                        >
+                          <h3 class="cardTitle">Basic Crew Neck Tee</h3>
+                          <p class="productInfo">$44.00</p>
+                        </div>
+                        <p class="productInfo mt-1">Black</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="newProduct overflow-hidden">
+                      <div class="productImg position-relative">
+                        <button class="btn2 position-absolute btn-modify">
+                          10%
+                        </button>
+                        <picture
+                          ><img
+                            class="newProductImg"
+                            src="images/HomePage/newArrivals/new67.png"
+                            alt="images/HomePage/newArrivals/new67.png"
+                        /></picture>
+                        <div
+                          class="overly position-absolute bg-white w-100 px-3 py-3"
+                        >
+                          <div
+                            class="d-flex flex-column row-gap-2 align-items-end"
+                          >
+                            <div>
+                              <a>Add to Wish List</a>
+                              <span><i class="fa-solid fa-heart"></i></span>
+                            </div>
+                            <div>
+                              <a>Compare</a>
+                              <span
+                                ><i class="fa-sharp fa-solid fa-rotate"></i
+                              ></span>
+                            </div>
+                            <div>
+                              <a>Add to Cart</a>
+                              <span
+                                ><i
+                                  class="fa-sharp fa-solid fa-cart-shopping"
+                                ></i
+                              ></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="d-flex justify-content-around justify-content-lg-between column-gap-1 mt-3"
+                        >
+                          <h3 class="cardTitle">Basic Crew Neck Tee</h3>
+                          <p class="productInfo">$44.00</p>
+                        </div>
+                        <p class="productInfo mt-1">Black</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="newProduct overflow-hidden">
+                      <div class="productImg position-relative">
+                        <button class="btn2 position-absolute btn-modify">
+                          15%
+                        </button>
+                        <picture
+                          ><img
+                            class="newProductImg"
+                            src="images/HomePage/newArrivals/new8.png"
+                            alt="images/HomePage/newArrivals/new8.png"
+                        /></picture>
+                        <div
+                          class="overly position-absolute bg-white w-100 px-3 py-3"
+                        >
+                          <div
+                            class="d-flex flex-column row-gap-2 align-items-end"
+                          >
+                            <div>
+                              <a>Add to Wish List</a>
+                              <span><i class="fa-solid fa-heart"></i></span>
+                            </div>
+                            <div>
+                              <a>Compare</a>
+                              <span
+                                ><i class="fa-sharp fa-solid fa-rotate"></i
+                              ></span>
+                            </div>
+                            <div>
+                              <a>Add to Cart</a>
+                              <span
+                                ><i
+                                  class="fa-sharp fa-solid fa-cart-shopping"
+                                ></i
+                              ></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="d-flex justify-content-around justify-content-lg-between column-gap-1 mt-3"
+                        >
+                          <h3 class="cardTitle">Basic Crew Neck Tee</h3>
+                          <p class="productInfo">$44.00</p>
+                        </div>
+                        <p class="productInfo mt-1">Black</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="newProduct overflow-hidden">
+                      <div class="productImg position-relative">
+                        <button class="btn2 position-absolute btn-modify">
+                          10%
+                        </button>
+                        <picture
+                          ><img
+                            class="newProductImg"
+                            src="images/HomePage/newArrivals/special1.png"
+                            alt="images/HomePage/newArrivals/special1.png"
+                        /></picture>
+                        <div
+                          class="overly position-absolute bg-white w-100 px-3 py-3"
+                        >
+                          <div
+                            class="d-flex flex-column row-gap-2 align-items-end"
+                          >
+                            <div>
+                              <a>Add to Wish List</a>
+                              <span><i class="fa-solid fa-heart"></i></span>
+                            </div>
+                            <div>
+                              <a>Compare</a>
+                              <span
+                                ><i class="fa-sharp fa-solid fa-rotate"></i
+                              ></span>
+                            </div>
+                            <div>
+                              <a>Add to Cart</a>
+                              <span
+                                ><i
+                                  class="fa-sharp fa-solid fa-cart-shopping"
+                                ></i
+                              ></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="d-flex justify-content-around justify-content-lg-between column-gap-1 mt-3"
+                        >
+                          <h3 class="cardTitle">Basic Crew Neck Tee</h3>
+                          <p class="productInfo">$44.00</p>
+                        </div>
+                        <p class="productInfo mt-1">Black</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="newProduct overflow-hidden">
+                      <div class="productImg position-relative">
+                        <picture
+                          ><img
+                            class="newProductImg"
+                            src="images/HomePage/newArrivals/special2.png"
+                            alt="images/HomePage/newArrivals/special2.png"
+                        /></picture>
+                        <div
+                          class="overly position-absolute bg-white w-100 px-3 py-3"
+                        >
+                          <div
+                            class="d-flex flex-column row-gap-2 align-items-end"
+                          >
+                            <div>
+                              <a>Add to Wish List</a>
+                              <span><i class="fa-solid fa-heart"></i></span>
+                            </div>
+                            <div>
+                              <a>Compare</a>
+                              <span
+                                ><i class="fa-sharp fa-solid fa-rotate"></i
+                              ></span>
+                            </div>
+                            <div>
+                              <a>Add to Cart</a>
+                              <span
+                                ><i
+                                  class="fa-sharp fa-solid fa-cart-shopping"
+                                ></i
+                              ></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="d-flex justify-content-around justify-content-lg-between column-gap-1 mt-3"
+                        >
+                          <h3 class="cardTitle">Basic Crew Neck Tee</h3>
+                          <p class="productInfo">$44.00</p>
+                        </div>
+                        <p class="productInfo mt-1">Black</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="newProduct overflow-hidden">
+                      <div class="productImg position-relative">
+                        <picture
+                          ><img
+                            class="newProductImg"
+                            src="images/HomePage/newArrivals/special3.png"
+                            alt="images/HomePage/newArrivals/special3.png"
+                        /></picture>
+                        <div
+                          class="overly position-absolute bg-white w-100 px-3 py-3"
+                        >
+                          <div
+                            class="d-flex flex-column row-gap-2 align-items-end"
+                          >
+                            <div>
+                              <a>Add to Wish List</a>
+                              <span><i class="fa-solid fa-heart"></i></span>
+                            </div>
+                            <div>
+                              <a>Compare</a>
+                              <span
+                                ><i class="fa-sharp fa-solid fa-rotate"></i
+                              ></span>
+                            </div>
+                            <div>
+                              <a>Add to Cart</a>
+                              <span
+                                ><i
+                                  class="fa-sharp fa-solid fa-cart-shopping"
+                                ></i
+                              ></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="d-flex justify-content-around justify-content-lg-between column-gap-1 mt-3"
+                        >
+                          <h3 class="cardTitle">Basic Crew Neck Tee</h3>
+                          <p class="productInfo">$44.00</p>
+                        </div>
+                        <p class="productInfo mt-1">Black</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="newProduct overflow-hidden">
+                      <div class="productImg position-relative">
+                        <picture
+                          ><img
+                            class="newProductImg"
+                            src="images/HomePage/newArrivals/special4.png"
+                            alt="images/HomePage/newArrivals/special4.png"
+                        /></picture>
+                        <div
+                          class="overly position-absolute bg-white w-100 px-3 py-3"
+                        >
+                          <div
+                            class="d-flex flex-column row-gap-2 align-items-end"
+                          >
+                            <div>
+                              <a>Add to Wish List</a>
+                              <span><i class="fa-solid fa-heart"></i></span>
+                            </div>
+                            <div>
+                              <a>Compare</a>
+                              <span
+                                ><i class="fa-sharp fa-solid fa-rotate"></i
+                              ></span>
+                            </div>
+                            <div>
+                              <a>Add to Cart</a>
+                              <span
+                                ><i
+                                  class="fa-sharp fa-solid fa-cart-shopping"
+                                ></i
+                              ></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="d-flex justify-content-around justify-content-lg-between column-gap-1 mt-3"
+                        >
+                          <h3 class="cardTitle">Basic Crew Neck Tee</h3>
+                          <p class="productInfo">$44.00</p>
+                        </div>
+                        <p class="productInfo mt-1">Black</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="pagination d-flex flex-column flex-md-row row-gap-3 align-items-center justify-content-between w-100 mt-5"
+                >
+                  <nav aria-label="...">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link Info">Previous</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link customActive" href="#">1</a>
+                      </li>
+                      <li class="page-item" aria-current="page">
+                        <a class="page-link Info" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link Info" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link Info" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link Info" href="#">5</a>
+                      </li>
+
+                      <li class="page-item">
+                        <a class="page-link Info" href="#">....</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link Info" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <p class="Info">Products from 1 to 12 of 80</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

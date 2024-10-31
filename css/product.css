@@ -122,10 +122,11 @@ img {
   font-weight: var(--font-normal);
   line-height: 23px;
 }
-.btn1 {
+
+.btn2 {
   background: var(--primary-black);
   color: white;
-  padding: 16px 0;
+  padding: 8px 33px;
   font-weight: var(--font-bold);
   font-size: var(--small-font);
   transition: 0.3s;
@@ -134,6 +135,16 @@ img {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
   border: none;
+}
+.btn2:hover {
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  background: transparent;
+  color: var(--primary-black);
+  border: 1px solid var(--primary-black);
 }
 /* ~~~~~~~~~~~~~~~~~~ Common CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -197,13 +208,65 @@ nav .navLink:hover {
 #product .productTop {
   margin-bottom: 130px;
 }
-#product .category li {
+#product .category {
+  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+#product .category li,
+#product .colorWrapper li,
+#product .brandWrapper li,
+#product .priceWrapper li {
   padding: 19px 0;
   border-bottom: 1px solid #f0f0f0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
-#product .categoryWrapper select {
+.dropdown-menu {
+  --bs-dropdown-min-width: 3rem;
+}
+
+#product .color {
+  position: relative;
+}
+#product .color::before {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  content: "";
+  left: -10px;
+  bottom: 11px;
+}
+#product .color1::before {
+  background: #000;
+}
+#product .color2::before {
+  background: #ff8686;
+}
+#product .color3::before {
+  background: #7ed321;
+}
+#product .color4::before {
+  background: #b6b6b6;
+}
+#product .color5::before {
+  background: #15cba5;
+}
+#product aside select {
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 .form-select:focus {
   outline: 0;
@@ -211,25 +274,49 @@ nav .navLink:hover {
 }
 .form-select {
   --bs-form-select-bg-img: url("../images/plus.svg");
-  display: block;
-  width: 100%;
-  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: var(--bs-body-color);
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: var(--bs-body-bg);
   background-image: var(--bs-form-select-bg-img),
     var(--bs-form-select-bg-icon, none);
-  background-repeat: no-repeat;
-  background-position: right 0.75rem center;
-  background-size: 16px 12px;
-  border: var(--bs-border-width) solid var(--bs-border-color);
-  border-radius: var(--bs-border-radius);
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#product .shortedWrapper {
+  width: 65%;
+}
+#product .productItemsContainer {
+  margin-top: 60px;
+}
+#product .newProduct:hover .overly {
+  opacity: 1;
+  right: 0;
+  bottom: -13px;
+}
+.productImg {
+  max-width: 370px;
+  margin: 0 auto;
+}
+#product .newProductImg {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+#product .overly {
+  right: -150px;
+  opacity: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  bottom: 0;
+  width: 100%;
+}
+#product .btn-modify {
+  top: 20px;
+  left: 28px;
+}
+#product .customActive {
+  background: var(--primary-black);
+  color: white;
 }
 /* ~~~~~~~~~~~~~~~~~~ Product Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
