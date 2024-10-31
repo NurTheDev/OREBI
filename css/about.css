@@ -60,7 +60,6 @@ li {
 a {
   text-decoration: none;
   color: inherit;
-  /*Makelinksinheritthetextcolor*/
   cursor: pointer;
   transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
@@ -161,6 +160,13 @@ nav .navLink:hover {
 }
 .navbar {
   background: var(--nav-footer);
+}
+.input-group {
+  max-width: 600px;
+  width: 100%;
+}
+.searchBtn {
+  right: 0;
 }
 .searchInput {
   color: #c4c4c4;

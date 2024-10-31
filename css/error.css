@@ -60,6 +60,7 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+  /*Makelinksinheritthetextcolor*/
   cursor: pointer;
   transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
@@ -190,44 +191,23 @@ nav .navLink:hover {
   -o-transform: scale(1.04);
 }
 /* ~~~~~~~~~~~~~~~~~~ Navbar CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~~~~~ Checkout Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-#checkout {
+/* ~~~~~~~~~~~~~~~~~~ Error Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#error {
   padding-top: 128px;
 }
-#checkout .link-modify {
+#error .errorTitle {
+  font-size: 200px;
   font-weight: var(--font-bold);
+  color: var(--primary-black);
 }
-#checkout .link-modify:hover {
-  text-decoration: underline;
+#error .productiInfo-modiy {
+  width: 50%;
 }
-#checkout .mp-modify {
-  margin: 120px 0;
-}
-
-#checkout .input-modiy {
-  padding: 17px 10px;
-  color: var(--light-gray);
-  border-bottom: 1px solid #f0f0f0;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-}
-#checkout .input-modiy:focus {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border: none;
-}
-#checkout .checkoutTable {
-  margin-top: 54px;
-}
-#checkout table th,
-#checkout table td {
-  border: 1px solid #f0f0f0;
-}
-#checkout .loginBtn-modify {
+#error .loginBtn-modify {
   max-width: 200px;
   width: 100%;
 }
-#checkout .loginBtn-modify:hover {
+#error .loginBtn-modify:hover {
   transform: scale(0.95);
   -webkit-transform: scale(0.95);
   -moz-transform: scale(0.95);
@@ -237,7 +217,8 @@ nav .navLink:hover {
   color: var(--primary-black);
   border: 1px solid var(--primary-black);
 }
-/* ~~~~~~~~~~~~~~~~~~ Checkout Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~ Error Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~  */
 footer {
