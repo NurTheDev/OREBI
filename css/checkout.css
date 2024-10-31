@@ -209,6 +209,27 @@ nav .navLink:hover {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border: none;
 }
+#checkout .checkoutTable {
+  margin-top: 54px;
+}
+#checkout table th,
+#checkout table td {
+  border: 1px solid #f0f0f0;
+}
+#checkout .loginBtn-modify {
+  max-width: 200px;
+  width: 100%;
+}
+#checkout .loginBtn-modify:hover {
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  background: transparent;
+  color: var(--primary-black);
+  border: 1px solid var(--primary-black);
+}
 /* ~~~~~~~~~~~~~~~~~~ Checkout Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~  */
