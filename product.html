@@ -52,8 +52,8 @@
     />
     <!-- ~~~~~~~~~~~~ Bootstrap CDN Link ~~~~~~~~~~~~~~~ -->
     <!-- ~~~~~~~~~~~~ Coustom CSS Link ~~~~~~~~~~~~~~~ -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="./css/product.css" />
+    <link rel="stylesheet" href=".css/responsive.css" />
     <!-- ~~~~~~~~~~~~ Coustom CSS Link ~~~~~~~~~~~~~~~ -->
   </head>
   <body class="bg-white">
@@ -159,7 +159,228 @@
       </div>
     </section>
     <!-- ~~~~~~~~~~~~~~ Second Navbar ~~~~~~~~~~~~~~ -->
+    <!-- ==========================product image section========================== -->
 
+    <section id="prodectImageSection">
+      <div class="container">
+        <h4 class="prodectImageSection__hometag">
+          <span
+            ><a href="#">home</a><i class="fa-sharp fa-thin fa-greater-than"></i
+            ><a href="#">products</a></span
+          >
+        </h4>
+        <div class="row gy-3">
+          <div class="col-lg-6">
+            <picture>
+              <img src="./images/product/pic1.png" class="w-100 img-fluid" />
+            </picture>
+          </div>
+          <div class="col-lg-6">
+            <picture>
+              <img src="./images/product/pic2.png" class="w-100 img-fluid" />
+            </picture>
+          </div>
+          <div class="col-lg-6">
+            <picture>
+              <img src="./images/product/pic3.png" class="w-100 img-fluid" />
+            </picture>
+          </div>
+          <div class="col-lg-6">
+            <picture>
+              <img src="./images/product/pic4.png" class="w-100 img-fluid" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==========================product image section========================== -->
+    <!-- =========================productinfo==================================== -->
+    <section id="productinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="productsdetails">
+              <h3 class="productsdetails__name">Product</h3>
+              <div class="productsdetails__staricon">
+                <span>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </span>
+                <a href="#">1 Review</a>
+              </div>
+              <div class="productPrice">
+                <h4 class="productPrice__discount">$88.00</h4>
+                <h5 class="productPrice__afterdiscount">$44.00</h5>
+              </div>
+              <div class="productcolorWrapper">
+                <div class="productsdetailsColorBall">
+                  <h5 class="productsdetailsColorBall__color">COLOR:</h5>
+                  <div class="productcolorCircle">
+                    <div class="productcolorCircle__1"></div>
+                    <div class="productcolorCircle__1"></div>
+                    <div class="productcolorCircle__2"></div>
+                    <div class="productcolorCircle__1"></div>
+                    <div class="productcolorCircle__1"></div>
+                  </div>
+                </div>
+                <div class="productSize">
+                  <div class="productSize_1">size:</div>
+                  <div class="productSize_2">
+                    <i class="fa-sharp fa-light fa-angle-down"></i>
+                  </div>
+                </div>
+                <div class="productQuantity">
+                  <div class="productQuantity_1">QUANTITY::</div>
+                  <div class="productQuantity_2">
+                    <a href=""><i class="fa-light fa-minus"></i></a>
+                    <a href=""><i class="fa-solid fa-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="buttonPart">
+                <button class="productBtn">Add to Wish List</button>
+                <button class="productBtn btn--2">Add to Wish List</button>
+              </div>
+              <div class="accordionPart">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        SHIPPING & RETURNS
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the first item's accordion body.</strong
+                        >
+                        our default variables. It's also worth noting that just
+
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        FEATURES & DETAILS
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the second item's accordion body.</strong
+                        >
+
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================productinfo==================================== -->
+    <!-- =========================description=================================== -->
+    <section id="reviewpart">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="reviewWrapper">
+              <div class="review__description">
+                <h4 class="review_1">Description</h4>
+                <h5 class="review_2">Reviews (1)</h5>
+              </div>
+              <h6 class="review_3">1 review for Product</h6>
+              <div class="johnsreview__wrapper">
+                <div class="johns__review">
+                  <h4 class="johnsreview_name">John Ford</h4>
+                  <div class="johns__review__star">
+                    <span>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                      <i class="fa-sharp fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+                <h4 class="johns__comments">Lorem Ipsum is simply dummy text of  ure the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </h4>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================description=================================== -->
+     <!-- =========================reviewbottomPart============================= -->
+      <section id="reviewbottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="reviewbottomPart">
+                <h3 class="reviewbottom__title">Add a Review</h3>
+              <div class="reviewBottom__namesection">
+                <h2 class="reviewbottom__name">name</h2>
+                <div class="input-group mb-3">    
+                  <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="your name here">
+                </div>       
+              </div>
+              <div class="reviewBottom__namesection">
+                <h2 class="reviewbottom__name">email</h2>
+                <div class="input-group mb-3">    
+                  <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="your email here">
+                </div>       
+              </div>
+              <div class="reviewBottom__namesection">
+                <h2 class="reviewbottom__name">review</h2>
+                <div class="input-group mb-3">    
+                  <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="your review here">
+                </div>       
+              </div>
+              <button class="reviewBtn">post here</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- =========================reviewbottomPart============================= -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~~~~~~ -->
     <footer>
       <div class="container">
