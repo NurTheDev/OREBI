@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Error</title>
 
     <!-- ~~~~~~~~~~~~ Font Awesome Link ~~~~~~~~~~~~~~~ -->
     <link
@@ -52,7 +52,7 @@
     />
     <!-- ~~~~~~~~~~~~ Bootstrap CDN Link ~~~~~~~~~~~~~~~ -->
     <!-- ~~~~~~~~~~~~ Coustom CSS Link ~~~~~~~~~~~~~~~ -->
-    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/error.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- ~~~~~~~~~~~~ Coustom CSS Link ~~~~~~~~~~~~~~~ -->
   </head>
@@ -166,98 +166,41 @@
     </section>
     <!-- ~~~~~~~~~~~~~~ Second Navbar ~~~~~~~~~~~~~~ -->
     <main>
-      <section id="about">
+      <section id="error">
         <div class="container">
-          <div
-            class="aboutSection d-flex flex-column justify-content-between text-center text-lg-start"
-          >
-            <div class="aboutTop">
-              <h1 class="heroTitle">About</h1>
+          <div class="errorContainer d-flex flex-column row-gap-lg-5 row-gap-3">
+            <h1 class="errorTitle">404</h1>
+            <p class="productInfo productiInfo-modiy">
+              The page you were looking for couldn't be found. The page could be
+              removed or you misspelled the word while searching for it. Maybe
+              try a search?
+            </p>
+            <div class="errorSearch">
               <div
-                class="smallNav mt-3 d-flex column-gap-2 align-items-center justify-content-center justify-content-lg-start"
+                class="input-group position-relative d-flex align-items-center"
               >
-                <a href="" class="Info">Home</a>
-                <span class="Info"
-                  ><i class="fa-duotone fa-solid fa-greater-than"></i
-                ></span>
-                <a href="" class="Info">About</a>
+                <input
+                  type="text"
+                  class="searchInput"
+                  placeholder="Search Products"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn position-absolute searchBtn"
+                  type="button"
+                  id="button-addon2"
+                >
+                  <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                </button>
               </div>
             </div>
-            <div class="row g-3 aboutContainer">
-              <div class="col-md-6 h-100">
-                <div class="position-relative overflow-hidden">
-                  <picture
-                    ><img
-                      class="aboutImg"
-                      src="images/aboutPage/img2.png"
-                      alt="images/aboutPage/img2.png"
-                  /></picture>
-                  <button class="btn1 aboutBtn-modify position-absolute">
-                    Our Brands
-                  </button>
-                </div>
-              </div>
-              <div class="col-md-6 h-100">
-                <div class="position-relative overflow-hidden">
-                  <picture
-                    ><img
-                      class="aboutImg"
-                      src="images/aboutPage/img1.png"
-                      alt="images/aboutPage/img1.png"
-                  /></picture>
-                  <button class="btn1 aboutBtn-modify position-absolute">
-                    Our Stores
-                  </button>
-                </div>
-              </div>
-            </div>
-            <h2 class="aboutDetails">
-              Orebi is one of the world’s leading ecommerce brands and is
-              internationally recognized for celebrating the essence of classic
-              Worldwide cool looking style.
-            </h2>
-            <div class="row g-3 gy-5">
-              <div class="col-lg-4 col-md-6">
-                <div>
-                  <h4 class="aboutDetailsHeading">Our Vision</h4>
-                  <p class="Info mt-2">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an printer
-                    took a galley of type and scrambled it to make a type
-                    specimen book.
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div>
-                  <h4 class="aboutDetailsHeading">Our Story</h4>
-                  <p class="Info mt-2">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an printer
-                    took a galley of type and scrambled it to make a type
-                    specimen book.
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div>
-                  <h4 class="aboutDetailsHeading">Our Brands</h4>
-                  <p class="Info mt-2">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an printer
-                    took a galley of type and scrambled it to make a type
-                    specimen book.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <button class="btn1 loginBtn-modify">Back to Home</button>
           </div>
         </div>
       </section>
     </main>
+
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~~~~~~ -->
     <footer>
       <div class="container">

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Product</title>
 
     <!-- ~~~~~~~~~~~~ Font Awesome Link ~~~~~~~~~~~~~~~ -->
     <link
@@ -52,7 +52,7 @@
     />
     <!-- ~~~~~~~~~~~~ Bootstrap CDN Link ~~~~~~~~~~~~~~~ -->
     <!-- ~~~~~~~~~~~~ Coustom CSS Link ~~~~~~~~~~~~~~~ -->
-    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/product.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- ~~~~~~~~~~~~ Coustom CSS Link ~~~~~~~~~~~~~~~ -->
   </head>
@@ -166,98 +166,55 @@
     </section>
     <!-- ~~~~~~~~~~~~~~ Second Navbar ~~~~~~~~~~~~~~ -->
     <main>
-      <section id="about">
+      <section id="product">
         <div class="container">
-          <div
-            class="aboutSection d-flex flex-column justify-content-between text-center text-lg-start"
-          >
-            <div class="aboutTop">
-              <h1 class="heroTitle">About</h1>
+          <div class="productContainer">
+            <div class="productTop text-center text-lg-start">
+              <h1 class="heroTitle">Products</h1>
               <div
-                class="smallNav mt-3 d-flex column-gap-2 align-items-center justify-content-center justify-content-lg-start"
+                class="smallNav d-flex column-gap-2 align-items-center justify-content-center justify-content-lg-start mt-3"
               >
                 <a href="" class="Info">Home</a>
                 <span class="Info"
                   ><i class="fa-duotone fa-solid fa-greater-than"></i
                 ></span>
-                <a href="" class="Info">About</a>
+                <a href="" class="Info">Product</a>
               </div>
             </div>
-            <div class="row g-3 aboutContainer">
-              <div class="col-md-6 h-100">
-                <div class="position-relative overflow-hidden">
-                  <picture
-                    ><img
-                      class="aboutImg"
-                      src="images/aboutPage/img2.png"
-                      alt="images/aboutPage/img2.png"
-                  /></picture>
-                  <button class="btn1 aboutBtn-modify position-absolute">
-                    Our Brands
-                  </button>
-                </div>
+            <div class="row">
+              <div class="col-lg-3">
+                <aside>
+                  <div class="categoryWrapper">
+                    <h4 class="cardTitle">Shop by Category</h4>
+                    <ul class="category mt-4">
+                      <li>
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>
+                            <a class="productInfo" href="">Category 1</a>
+                          </option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </li>
+                      <li><a class="productInfo" href="">Category 2</a></li>
+                      <li><a class="productInfo" href="">Category 3 </a></li>
+                      <li><a class="productInfo" href="">Category 4</a></li>
+                      <li><a class="productInfo" href="">Category 5</a></li>
+                    </ul>
+                  </div>
+                </aside>
               </div>
-              <div class="col-md-6 h-100">
-                <div class="position-relative overflow-hidden">
-                  <picture
-                    ><img
-                      class="aboutImg"
-                      src="images/aboutPage/img1.png"
-                      alt="images/aboutPage/img1.png"
-                  /></picture>
-                  <button class="btn1 aboutBtn-modify position-absolute">
-                    Our Stores
-                  </button>
-                </div>
-              </div>
-            </div>
-            <h2 class="aboutDetails">
-              Orebi is one of the world’s leading ecommerce brands and is
-              internationally recognized for celebrating the essence of classic
-              Worldwide cool looking style.
-            </h2>
-            <div class="row g-3 gy-5">
-              <div class="col-lg-4 col-md-6">
-                <div>
-                  <h4 class="aboutDetailsHeading">Our Vision</h4>
-                  <p class="Info mt-2">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an printer
-                    took a galley of type and scrambled it to make a type
-                    specimen book.
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div>
-                  <h4 class="aboutDetailsHeading">Our Story</h4>
-                  <p class="Info mt-2">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an printer
-                    took a galley of type and scrambled it to make a type
-                    specimen book.
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div>
-                  <h4 class="aboutDetailsHeading">Our Brands</h4>
-                  <p class="Info mt-2">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an printer
-                    took a galley of type and scrambled it to make a type
-                    specimen book.
-                  </p>
-                </div>
-              </div>
+              <div class="col-lg-9"></div>
             </div>
           </div>
         </div>
       </section>
     </main>
+
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~~~~~~ -->
     <footer>
       <div class="container">

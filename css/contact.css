@@ -125,31 +125,7 @@ img {
 .btn1 {
   background: var(--primary-black);
   color: white;
-  padding: 16px 59px;
-  font-weight: var(--font-bold);
-  font-size: var(--small-font);
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  border: none;
-}
-.btn1:hover,
-.btn2:hover {
-  transform: scale(0.95);
-  -webkit-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  -o-transform: scale(0.95);
-  background: transparent;
-  color: var(--primary-black);
-  border: 1px solid var(--primary-black);
-}
-.btn2 {
-  background: var(--primary-black);
-  color: white;
-  padding: 8px 33px;
+  padding: 16px 0;
   font-weight: var(--font-bold);
   font-size: var(--small-font);
   transition: 0.3s;
@@ -214,129 +190,12 @@ nav .navLink:hover {
   -o-transform: scale(1.04);
 }
 /* ~~~~~~~~~~~~~~~~~~ Navbar CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~~~~~ Hero Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-#heroSection {
-  background: #f5f7f9;
-}
-#heroSection .title-modify {
-  text-shadow: 1px 1px 5px #767676;
-}
-#heroSection .heroContant {
-  row-gap: 33px;
-}
-#serviceContainer {
-  border: 1px solid #f0f0f0;
-}
-#serviceContainer .service {
-  color: var(--primary-black);
-  font-size: 24px;
-  font-weight: var(--font-bold);
-}
-
-/* ~~~~~~~~~~~~~~~~~~ Hero Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~~~~~ Sale Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-#sale {
-  margin-top: 128px;
-}
-#sale .contant {
-  row-gap: 36px;
-}
-#sale .saleCard:hover {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-#sale .saleImg {
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  overflow: hidden;
-}
-#sale .saleCard:hover .saleImg {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-}
-#sale .contant {
-  padding-left: 64px;
-  padding-bottom: 10px;
-}
-/* ~~~~~~~~~~~~~~~~~~ Sale Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~~~~~ New Arrivel & Special offers Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-#newArrivals,
-#special {
-  margin-top: 128px;
-}
-#newArrivals .newProduct:hover .overly,
-#special .newProduct:hover .overly {
-  opacity: 1;
-  right: 0;
-  bottom: -13px;
-}
-#newArrivals .newProductImg,
-#special .newProductImg {
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-}
-#newArrivals .newProduct:hover .newProductImg,
-#special .newProduct:hover .newProductImg {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-}
-#newArrivals .overly,
-#special .overly {
-  right: -150px;
-  opacity: 0;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  bottom: 0;
+/* ~~~~~~~~~~~~~~~~~~ Contact Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#contact .contactBtn-modify {
+  max-width: 200px;
   width: 100%;
 }
-#newArrivals .btn-modify,
-#special .btn-modify {
-  top: 20px;
-  left: 28px;
-}
-#newArrivals .nextBtn {
-  width: 64px;
-  height: 64px;
-  background: rgba(0, 0, 0, 0.2);
-  color: white;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  font-size: var(--semi-base);
-  font-weight: var(--font-bold);
-  text-align: center;
-  line-height: 64px;
-  bottom: 40%;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-}
-#newArrivals .nextBtn-modify1 {
-  left: -30px;
-}
-#newArrivals .nextBtn-modify2,
-#special .nextBtn-modify2 {
-  right: -30px;
-}
-#newArrivals .nextBtn:hover {
+#contact .contactBtn-modify:hover {
   transform: scale(0.95);
   -webkit-transform: scale(0.95);
   -moz-transform: scale(0.95);
@@ -346,38 +205,23 @@ nav .navLink:hover {
   color: var(--primary-black);
   border: 1px solid var(--primary-black);
 }
-.productImg {
-  max-width: 370px;
-  margin: 0 auto;
-}
-/* ~~~~~~~~~~~~~~~~~~ New Arrivel Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~ Phone Of The Year Section ~~~~~~~~~~~~~~  */
-#phone {
+#contact .contactSection {
   margin-top: 128px;
+  row-gap: 140px;
 }
-#phone .phonContainer {
-  background: #f3f3f3;
+#contact .input-modiy {
+  padding: 17px 10px;
+  color: var(--light-gray);
+  border-bottom: 1px solid #f0f0f0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
-#phone .watchImg {
-  border-radius: 50%;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+#contact .input-modiy:focus {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: none;
 }
-#phone .phoneSection:hover .watchImg {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-}
-/* ~~~~~~~~~~~~~~ Phone Of The Year Section ~~~~~~~~~~~~~~  */
+/* ~~~~~~~~~~~~~~~~~~ Contact Section CSS ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~  */
 footer {
   background: var(--nav-footer);

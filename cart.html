@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Cart</title>
 
     <!-- ~~~~~~~~~~~~ Font Awesome Link ~~~~~~~~~~~~~~~ -->
     <link
@@ -52,7 +52,7 @@
     />
     <!-- ~~~~~~~~~~~~ Bootstrap CDN Link ~~~~~~~~~~~~~~~ -->
     <!-- ~~~~~~~~~~~~ Coustom CSS Link ~~~~~~~~~~~~~~~ -->
-    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/cart.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- ~~~~~~~~~~~~ Coustom CSS Link ~~~~~~~~~~~~~~~ -->
   </head>
@@ -166,91 +166,106 @@
     </section>
     <!-- ~~~~~~~~~~~~~~ Second Navbar ~~~~~~~~~~~~~~ -->
     <main>
-      <section id="about">
+      <section id="cart">
         <div class="container">
-          <div
-            class="aboutSection d-flex flex-column justify-content-between text-center text-lg-start"
-          >
-            <div class="aboutTop">
-              <h1 class="heroTitle">About</h1>
+          <div class="cartContainer">
+            <div class="cartTop text-center text-lg-start">
+              <h1 class="heroTitle">Cart</h1>
               <div
-                class="smallNav mt-3 d-flex column-gap-2 align-items-center justify-content-center justify-content-lg-start"
+                class="smallNav d-flex column-gap-2 align-items-center justify-content-center justify-content-lg-start mt-3"
               >
                 <a href="" class="Info">Home</a>
                 <span class="Info"
                   ><i class="fa-duotone fa-solid fa-greater-than"></i
                 ></span>
-                <a href="" class="Info">About</a>
+                <a href="" class="Info">cart</a>
               </div>
             </div>
-            <div class="row g-3 aboutContainer">
-              <div class="col-md-6 h-100">
-                <div class="position-relative overflow-hidden">
-                  <picture
-                    ><img
-                      class="aboutImg"
-                      src="images/aboutPage/img2.png"
-                      alt="images/aboutPage/img2.png"
-                  /></picture>
-                  <button class="btn1 aboutBtn-modify position-absolute">
-                    Our Brands
-                  </button>
+            <div class="row cartHeader">
+              <div class="col-3"><h5 class="footerTitle">Product</h5></div>
+              <div class="col-3"><h5 class="footerTitle">Price</h5></div>
+              <div class="col-3"><h5 class="footerTitle">Quantity</h5></div>
+              <div class="col-3"><h5 class="footerTitle">Total</h5></div>
+            </div>
+            <div class="cartMain">
+              <div class="row align-items-center">
+                <div class="col-3">
+                  <div
+                    class="cartItem d-flex flex-column flex-md-row align-items-center column-gap-4 text-center text-md-start"
+                  >
+                    <a class="link-modify d-none d-lg-block" href=""
+                      ><i class="fa-solid fa-xmark"></i
+                    ></a>
+                    <picture
+                      ><img src="images/cartImg.png" alt="images/cartImg.png"
+                    /></picture>
+                    <h5 class="footerTitle">Product Name</h5>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="cartItem"><h4 class="cardTitle">$44.00</h4></div>
+                </div>
+                <div class="col-3">
+                  <div
+                    class="cartItem cartItem-modify d-flex align-items-center"
+                  >
+                    <button class="cartBtn productInfo d-none d-md-block">
+                      <span><i class="fa-regular fa-minus"></i></span>
+                    </button>
+                    <input type="number" value="1" min="1" max="20" />
+                    <button class="cartBtn productInfo d-none d-md-block">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="cartItem"><h4 class="cardTitle">$44.00</h4></div>
                 </div>
               </div>
-              <div class="col-md-6 h-100">
-                <div class="position-relative overflow-hidden">
-                  <picture
-                    ><img
-                      class="aboutImg"
-                      src="images/aboutPage/img1.png"
-                      alt="images/aboutPage/img1.png"
-                  /></picture>
-                  <button class="btn1 aboutBtn-modify position-absolute">
-                    Our Stores
-                  </button>
+              <div class="row mt-5 justify-content-between sizeWrapper">
+                <div class="col-md-3 col-8">
+                  <div class="size d-flex align-items-center">
+                    <select
+                      class="form-select size-modify input-modiy"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Size</option>
+                      <option value="1">xll</option>
+                      <option value="2">extra large</option>
+                      <option value="3">large</option>
+                      <option value="4">medium</option>
+                      <option value="5">small</option>
+                      <option value="6">extra small</option>
+                    </select>
+                    <a href="" class="footerTitle link-modify">Apply coupon</a>
+                  </div>
+                </div>
+                <div class="col-md-2 col-4 d-flex align-items-center">
+                  <a href="" class="footerTitle link-modify">Update cart</a>
                 </div>
               </div>
             </div>
-            <h2 class="aboutDetails">
-              Orebi is one of the world’s leading ecommerce brands and is
-              internationally recognized for celebrating the essence of classic
-              Worldwide cool looking style.
-            </h2>
-            <div class="row g-3 gy-5">
-              <div class="col-lg-4 col-md-6">
-                <div>
-                  <h4 class="aboutDetailsHeading">Our Vision</h4>
-                  <p class="Info mt-2">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an printer
-                    took a galley of type and scrambled it to make a type
-                    specimen book.
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div>
-                  <h4 class="aboutDetailsHeading">Our Story</h4>
-                  <p class="Info mt-2">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an printer
-                    took a galley of type and scrambled it to make a type
-                    specimen book.
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div>
-                  <h4 class="aboutDetailsHeading">Our Brands</h4>
-                  <p class="Info mt-2">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an printer
-                    took a galley of type and scrambled it to make a type
-                    specimen book.
-                  </p>
+            <div class="cartFooter">
+              <div class="row justify-content-end">
+                <div class="col-md-5">
+                  <table class="table">
+                    <tbody>
+                      <p class="cardTitle text-end mb-3">Cart totals</p>
+                      <tr>
+                        <th><p class="footerTitle">Subtotal</p></th>
+                        <td><p class="productInfo">389.99 $</p></td>
+                      </tr>
+                      <tr>
+                        <th><p class="footerTitle">Total</p></th>
+                        <td><p class="productInfo">389.99 $</p></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="btnContainer d-flex justify-content-end">
+                    <button class="btn1 loginBtn-modify">
+                      Proceed to Checkout
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -258,6 +273,7 @@
         </div>
       </section>
     </main>
+
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~~~~~~ -->
     <footer>
       <div class="container">

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Checkout</title>
 
     <!-- ~~~~~~~~~~~~ Font Awesome Link ~~~~~~~~~~~~~~~ -->
     <link
@@ -52,7 +52,7 @@
     />
     <!-- ~~~~~~~~~~~~ Bootstrap CDN Link ~~~~~~~~~~~~~~~ -->
     <!-- ~~~~~~~~~~~~ Coustom CSS Link ~~~~~~~~~~~~~~~ -->
-    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- ~~~~~~~~~~~~ Coustom CSS Link ~~~~~~~~~~~~~~~ -->
   </head>
@@ -166,91 +166,241 @@
     </section>
     <!-- ~~~~~~~~~~~~~~ Second Navbar ~~~~~~~~~~~~~~ -->
     <main>
-      <section id="about">
+      <section id="checkout">
         <div class="container">
-          <div
-            class="aboutSection d-flex flex-column justify-content-between text-center text-lg-start"
-          >
-            <div class="aboutTop">
-              <h1 class="heroTitle">About</h1>
+          <div class="checkoutContainer">
+            <div class="checkoutTop text-center text-lg-start mb-lg-5">
+              <h1 class="heroTitle">Checkout</h1>
               <div
-                class="smallNav mt-3 d-flex column-gap-2 align-items-center justify-content-center justify-content-lg-start"
+                class="smallNav d-flex column-gap-2 align-items-center justify-content-center justify-content-lg-start mt-3"
               >
                 <a href="" class="Info">Home</a>
                 <span class="Info"
                   ><i class="fa-duotone fa-solid fa-greater-than"></i
                 ></span>
-                <a href="" class="Info">About</a>
+                <a href="" class="Info">Login</a>
               </div>
             </div>
-            <div class="row g-3 aboutContainer">
-              <div class="col-md-6 h-100">
-                <div class="position-relative overflow-hidden">
-                  <picture
-                    ><img
-                      class="aboutImg"
-                      src="images/aboutPage/img2.png"
-                      alt="images/aboutPage/img2.png"
-                  /></picture>
-                  <button class="btn1 aboutBtn-modify position-absolute">
-                    Our Brands
+            <p class="productInfo mp-modify">
+              Have a coupon?
+              <a class="link-modify" href="">Click here to enter your code</a>
+            </p>
+            <form
+              class="d-flex flex-column row-gap-lg-5 row-gap-4 py-lg-5 py-3"
+            >
+              <h2 class="sectionTitle">Billing Details</h2>
+              <div class="formWrapper">
+                <div class="row g-3">
+                  <div class="col-lg-4">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="cardTitle"
+                        >First Name *</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control input-modiy mt-2"
+                        id="exampleFormControlInput1 "
+                        placeholder="First Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="cardTitle"
+                        >Last Name *</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control input-modiy mt-2"
+                        id="exampleFormControlInput1 "
+                        placeholder="Last Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div>
+                      <label for="exampleFormControlInput2" class="cardTitle"
+                        >Country *</label
+                      >
+                      <select
+                        class="form-select input-modiy mt-2"
+                        aria-label="Default select example"
+                        id="exampleFormControlInput2"
+                      >
+                        <option selected>Bangladesh</option>
+                        <option value="1">India</option>
+                        <option value="2">Pakistan</option>
+                        <option value="3">Nepal</option>
+                        <option value="4">Mayanmar</option>
+                        <option value="5">Chin</option>
+                        <option value="6">Rasia</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div>
+                      <label for="exampleFormControlInput1" class="cardTitle"
+                        >Companye Name (optional)</label
+                      >
+                      <select
+                        class="form-select input-modiy mt-2"
+                        aria-label="Default select example"
+                        id="exampleFormControlInput1"
+                      >
+                        <option selected>Company Name</option>
+                        <option value="1">company 1</option>
+                        <option value="2">company 2</option>
+                        <option value="3">company 3</option>
+                        <option value="4">company 4</option>
+                        <option value="5">company 5</option>
+                        <option value="6">company 6</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput3" class="cardTitle"
+                          >Street Address *</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control input-modiy mt-2"
+                          id="exampleFormControlInput3 "
+                          placeholder="House number and street name"
+                        />
+                        <input
+                          type="text"
+                          class="form-control input-modiy mt-2"
+                          id="exampleFormControlInput3 "
+                          placeholder="Apartment, suite, unit etc. (optional)"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput4" class="cardTitle"
+                          >Town/City *</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control input-modiy mt-2"
+                          id="exampleFormControlInput4 "
+                          placeholder="Town/City"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput4" class="cardTitle"
+                          >County (optional)</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control input-modiy mt-2"
+                          id="exampleFormControlInput4 "
+                          placeholder="County"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput5" class="cardTitle"
+                          >Post Code *</label
+                        >
+                        <input
+                          type="number"
+                          class="form-control input-modiy mt-2"
+                          id="exampleFormControlInput5 "
+                          placeholder="Post Code"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput6" class="cardTitle"
+                          >Phone *</label
+                        >
+                        <input
+                          type="tel"
+                          class="form-control input-modiy mt-2"
+                          id="exampleFormControlInput6 "
+                          placeholder="Phone"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput7" class="cardTitle"
+                          >Email Address *</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control input-modiy mt-2"
+                          id="exampleFormControlInput7 "
+                          placeholder="Email"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <form action="" class="d-flex flex-column row-gap-4">
+              <h2 class="sectionTitle">Additional Information</h2>
+              <div class="row g-3">
+                <div class="col-lg-12">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput8" class="cardTitle"
+                      >Other Notes (optional)</label
+                    >
+                    <textarea
+                      class="form-control input-modiy"
+                      id="exampleFormControlInput8"
+                      rows="3"
+                      placeholder="Notes about your order, e.g. special notes for delivery."
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="checkoutTable">
+              <div class="row justify-content-start">
+                <div class="col-lg-5">
+                  <h2 class="sectionTitle">Your Order</h2>
+                  <table class="table mt-3 mt-lg-5">
+                    <tbody>
+                      <tr>
+                        <th><p class="footerTitle">Product</p></th>
+                        <td><p class="productInfo">Total</p></td>
+                      </tr>
+                      <tr>
+                        <th><p class="footerTitle">Product name x 1</p></th>
+                        <td><p class="productInfo">389.99 $</p></td>
+                      </tr>
+                      <tr>
+                        <th><p class="footerTitle">Subtotal</p></th>
+                        <td><p class="productInfo">389.99 $</p></td>
+                      </tr>
+                      <tr>
+                        <th><p class="footerTitle">Total</p></th>
+                        <td><p class="productInfo">389.99 $</p></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button class="btn1 loginBtn-modify">
+                    Proceed to Checkout
                   </button>
-                </div>
-              </div>
-              <div class="col-md-6 h-100">
-                <div class="position-relative overflow-hidden">
-                  <picture
-                    ><img
-                      class="aboutImg"
-                      src="images/aboutPage/img1.png"
-                      alt="images/aboutPage/img1.png"
-                  /></picture>
-                  <button class="btn1 aboutBtn-modify position-absolute">
-                    Our Stores
-                  </button>
-                </div>
-              </div>
-            </div>
-            <h2 class="aboutDetails">
-              Orebi is one of the world’s leading ecommerce brands and is
-              internationally recognized for celebrating the essence of classic
-              Worldwide cool looking style.
-            </h2>
-            <div class="row g-3 gy-5">
-              <div class="col-lg-4 col-md-6">
-                <div>
-                  <h4 class="aboutDetailsHeading">Our Vision</h4>
-                  <p class="Info mt-2">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an printer
-                    took a galley of type and scrambled it to make a type
-                    specimen book.
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div>
-                  <h4 class="aboutDetailsHeading">Our Story</h4>
-                  <p class="Info mt-2">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an printer
-                    took a galley of type and scrambled it to make a type
-                    specimen book.
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div>
-                  <h4 class="aboutDetailsHeading">Our Brands</h4>
-                  <p class="Info mt-2">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an printer
-                    took a galley of type and scrambled it to make a type
-                    specimen book.
-                  </p>
                 </div>
               </div>
             </div>
@@ -258,6 +408,7 @@
         </div>
       </section>
     </main>
+
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~~~~~~ -->
     <footer>
       <div class="container">

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+
+    <!-- ~~~~~~~~~~~~ Font Awesome Link ~~~~~~~~~~~~~~~ -->
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-3b124ff0e0d7a67cd8c995d0aeb1d15a.css?vsn=d"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    />
+    <!-- ~~~~~~~~~~~~ Font Awesome Link ~~~~~~~~~~~~~~~ -->
+    <!-- ~~~~~~~~~~~~ Bootstrap CDN Link ~~~~~~~~~~~~~~~ -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- ~~~~~~~~~~~~ Bootstrap CDN Link ~~~~~~~~~~~~~~~ -->
+    <!-- ~~~~~~~~~~~~ Coustom CSS Link ~~~~~~~~~~~~~~~ -->
+    <link rel="stylesheet" href="css/signUp.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- ~~~~~~~~~~~~ Coustom CSS Link ~~~~~~~~~~~~~~~ -->
+  </head>
+  <body class="bg-white">
+    <!-- ~~~~~~~~~~~~~ First Navbar ~~~~~~~~~~~~~ -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="images/Logo.png" alt=""
+          /></a>
+          <!-- toogle Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- toogle Button -->
+          <div
+            class="collapse navbar-collapse coustomNav"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav m-auto gap-3">
+              <a class="navLink ps-4 ps-lg-0">Home</a>
+              <a class="navLink ps-4 ps-lg-0">Shop</a>
+              <a class="navLink ps-4 ps-lg-0">About</a>
+              <a class="navLink ps-4 ps-lg-0">Contacts</a>
+              <a class="navLink ps-4 ps-lg-0">Journal</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ~~~~~~~~~~~~~ First Navbar ~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~ Second Navbar ~~~~~~~~~~~~~~ -->
+    <section class="navbar">
+      <div class="container">
+        <div
+          class="navbarSection d-flex flex-column flex-lg-row justify-content-between align-items-center w-100 row-gap-3 row-gap-lg-0"
+        >
+          <div class="category">
+            <div class="dropdown">
+              <a
+                class="btn d-flex column-gap-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span><i class="fa-solid fa-bars-sort"></i></span>
+                <p>Shop by Category</p>
+              </a>
+              <ul class="footerNavbar mt-3 dropdown-menu">
+                <li><a class="dropdown-item" href="">Category 1</a></li>
+                <li><a class="dropdown-item" href="">Category 2</a></li>
+                <li><a class="dropdown-item" href="">Category 3</a></li>
+                <li><a class="dropdown-item" href="">Category 4</a></li>
+                <li><a class="dropdown-item" href="">Category 5</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="search">
+            <div
+              class="input-group position-relative d-flex align-items-center"
+            >
+              <input
+                type="text"
+                class="searchInput"
+                placeholder="Search Products"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn position-absolute searchBtn"
+                type="button"
+                id="button-addon2"
+              >
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="chart d-flex align-items-center">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span><i class="fa-solid fa-user"></i></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">User 1</a></li>
+                <li><a class="dropdown-item" href="#">User 2</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">User 3</a>
+                </li>
+              </ul>
+            </div>
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~ Second Navbar ~~~~~~~~~~~~~~ -->
+    <main>
+      <!-- ~~~~~~~~~~ sign up Section ~~~~~~~~~~~~~ -->
+      <section id="signUp">
+        <div class="container">
+          <div class="signUpContainer">
+            <div class="signUpTop text-center text-lg-start mb-lg-5">
+              <h1 class="heroTitle">Sign up</h1>
+              <div
+                class="smallNav d-flex column-gap-2 align-items-center justify-content-center justify-content-lg-start mt-3"
+              >
+                <a href="" class="Info">Home</a>
+                <span class="Info"
+                  ><i class="fa-duotone fa-solid fa-greater-than"></i
+                ></span>
+                <a href="" class="Info">Login</a>
+              </div>
+            </div>
+            <p
+              class="productInfo signUpDetails-modify text-center text-lg-start mb-3 mb-5 mt-3"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the.
+            </p>
+            <form
+              class="d-flex flex-column row-gap-lg-5 row-gap-4 py-lg-5 py-3"
+            >
+              <h2 class="sectionTitle">Your Personal Details</h2>
+              <div class="formWrapper">
+                <div class="row g-3">
+                  <div class="col-lg-4">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="cardTitle"
+                        >First Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control input-modiy mt-2"
+                        id="exampleFormControlInput1 "
+                        placeholder="First Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="cardTitle"
+                        >Last Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control input-modiy mt-2"
+                        id="exampleFormControlInput1 "
+                        placeholder="Last Name"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-3">
+                  <div class="col-lg-4">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="cardTitle"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control input-modiy mt-2"
+                        id="exampleFormControlInput1 "
+                        placeholder="company@domain.com"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="cardTitle"
+                        >Telephone</label
+                      >
+                      <input
+                        type="tel"
+                        class="form-control input-modiy mt-2"
+                        id="exampleFormControlInput1 "
+                        placeholder="Your phone number"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- ~~~~~~~~~~ sign up Section ~~~~~~~~~~~~~ -->
+      <!-- ~~~~~~~~~~ New Customer Section ~~~~~~~~~~~~~ -->
+      <section id="newCustomer">
+        <div class="container">
+          <div class="newCustomerContainer">
+            <form
+              class="d-flex flex-column row-gap-lg-5 row-gap-4 py-lg-5 py-3"
+            >
+              <h2 class="sectionTitle">New Customer</h2>
+              <div class="formWrapper">
+                <div class="row g-3">
+                  <div class="col-lg-4">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="cardTitle"
+                        >Address 1</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control input-modiy mt-2"
+                        id="exampleFormControlInput1 "
+                        placeholder="4279 Zboncak Port Suite 6212"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="cardTitle"
+                        >Address 2</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control input-modiy mt-2"
+                        id="exampleFormControlInput1 "
+                        placeholder="—"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-3">
+                  <div class="col-lg-4">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="cardTitle"
+                        >City</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control input-modiy mt-2"
+                        id="exampleFormControlInput1 "
+                        placeholder="Your city"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="cardTitle"
+                        >Post Code</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control input-modiy mt-2"
+                        id="exampleFormControlInput1 "
+                        placeholder="05228"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-3">
+                  <div class="col-lg-4">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="cardTitle"
+                        >Division</label
+                      >
+                      <select
+                        class="form-select input-modiy mt-2"
+                        id="exampleFormControlInput1"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Select your Devision</option>
+                        <option value="1">Dhaka</option>
+                        <option value="2">Khulna</option>
+                        <option value="3">Shylet</option>
+                        <option value="4">Rangpur</option>
+                        <option value="5">Cumilla</option>
+                        <option value="5">Rajshahi</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="cardTitle"
+                        >District</label
+                      >
+                      <select
+                        class="form-select input-modiy mt-2"
+                        id="exampleFormControlInput1"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Please select</option>
+                        <option value="1">Dhaka</option>
+                        <option value="2">Barishal</option>
+                        <option value="3">Chadpur</option>
+                        <option value="4">Bhol</option>
+                        <option value="5">Kuakata</option>
+                        <option value="6">Chattagram</option>
+                        <option value="7">Bandarban</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- ~~~~~~~~~~ New Customer Section ~~~~~~~~~~~~~ -->
+      <!-- ~~~~~~~~~~ passward Section ~~~~~~~~~~~~~ -->
+      <section id="password">
+        <div class="container">
+          <div class="passwordContainer">
+            <form
+              class="d-flex flex-column row-gap-lg-5 row-gap-4 py-lg-5 py-3"
+            >
+              <h2 class="sectionTitle">Your Password</h2>
+              <div class="row g-3">
+                <div class="col-lg-4">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="cardTitle"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control input-modiy mt-2"
+                      id="exampleFormControlInput1 "
+                      placeholder="Password"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="cardTitle"
+                      >Repeat Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control input-modiy mt-2"
+                      id="exampleFormControlInput1 "
+                      placeholder="Repeat password"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div
+              class="agrement mt-3 mt-lg-5 d-flex flex-column row-gap-4 align-items-center align-items-md-start"
+            >
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label productInfo"
+                  for="flexCheckDefault"
+                >
+                  I have read and agree to the Privacy Policy
+                </label>
+              </div>
+              <div class="subscribe d-flex column-gap-5 align-items-center">
+                <p class="productInfo">Subscribe Newsletter</p>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="inlineRadio2">No</label>
+                </div>
+              </div>
+              <button class="btn1 loginBtn-modify">Log in</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~~~~~~ -->
+    <footer>
+      <div class="container">
+        <div
+          class="row justify-content-around justify-content-lg-between text-center text-lg-start gy-4 gy-lg-0"
+        >
+          <div class="col-lg-2 col-6 col-md-4">
+            <div class="footerNav">
+              <h4 class="footerTitle">Menu</h4>
+              <ul class="footerNavbar mt-3">
+                <li><a class="Info" href="">Home</a></li>
+                <li><a class="Info" href="">Shop</a></li>
+                <li><a class="Info" href="">About</a></li>
+                <li><a class="Info" href="">Contact</a></li>
+                <li><a class="Info" href="">Journal</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-6 col-md-4">
+            <div class="footerNav">
+              <h4 class="footerTitle">SHOP</h4>
+              <ul class="footerNavbar mt-3">
+                <li><a class="Info" href="">Category 1</a></li>
+                <li><a class="Info" href="">Category 2</a></li>
+                <li><a class="Info" href="">Category 3</a></li>
+                <li><a class="Info" href="">Category 4</a></li>
+                <li><a class="Info" href="">Category 5</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-6 col-md-4">
+            <div class="footerNav">
+              <h4 class="footerTitle">HELP</h4>
+              <ul class="footerNavbar mt-3">
+                <li><a class="Info" href="">Privacy Policy</a></li>
+                <li><a class="Info" href="">Terms & Conditions</a></li>
+                <li><a class="Info" href="">Special E-shop</a></li>
+                <li><a class="Info" href="">Shipping</a></li>
+                <li><a class="Info" href="">Secure Payments</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-6 col-md-4">
+            <div class="footerNav">
+              <h4 class="footerTitle">(052) 611-5711 company@domain.com</h4>
+              <p class="Info mt-3">575 Crescent Ave. Quakertown, PA 18951</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-8">
+            <div class="text-center">
+              <a
+                ><img
+                  class="footerLogo mt-md-5 mt-lg-0"
+                  src="images/Logo.png"
+                  alt="images/Logo.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footerEnd mt-5 d-flex justify-content-between">
+          <div class="social">
+            <span class="socialApp"
+              ><i class="fa-brands fa-facebook-f"></i></span
+            ><span class="socialApp"
+              ><i class="fa-brands fa-linkedin-in"></i></span
+            ><span class="socialApp"
+              ><i class="fa-brands fa-instagram"></i
+            ></span>
+          </div>
+          <p class="Info text-end w-75 w-lg-100">
+            2020 Orebi Minimal eCommerce Figma Template by Adveits
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~~~~~~ -->
+    <!-- ~~~~~~~~~~~~ Bootstrap CDN Link ~~~~~~~~~~~~~~~ -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ~~~~~~~~~~~~ Bootstrap CDN Link ~~~~~~~~~~~~~~~ -->
+  </body>
+</html>

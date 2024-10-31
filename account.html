@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>My Account</title>
 
     <!-- ~~~~~~~~~~~~ Font Awesome Link ~~~~~~~~~~~~~~~ -->
     <link
@@ -52,7 +52,7 @@
     />
     <!-- ~~~~~~~~~~~~ Bootstrap CDN Link ~~~~~~~~~~~~~~~ -->
     <!-- ~~~~~~~~~~~~ Coustom CSS Link ~~~~~~~~~~~~~~~ -->
-    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/account.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- ~~~~~~~~~~~~ Coustom CSS Link ~~~~~~~~~~~~~~~ -->
   </head>
@@ -166,90 +166,52 @@
     </section>
     <!-- ~~~~~~~~~~~~~~ Second Navbar ~~~~~~~~~~~~~~ -->
     <main>
-      <section id="about">
+      <section id="account">
         <div class="container">
-          <div
-            class="aboutSection d-flex flex-column justify-content-between text-center text-lg-start"
-          >
-            <div class="aboutTop">
-              <h1 class="heroTitle">About</h1>
+          <div class="accountContainer">
+            <div class="accountTop text-center text-lg-start">
+              <h1 class="heroTitle">My Account</h1>
               <div
-                class="smallNav mt-3 d-flex column-gap-2 align-items-center justify-content-center justify-content-lg-start"
+                class="smallNav d-flex column-gap-2 align-items-center justify-content-center justify-content-lg-start mt-3"
               >
                 <a href="" class="Info">Home</a>
                 <span class="Info"
                   ><i class="fa-duotone fa-solid fa-greater-than"></i
                 ></span>
-                <a href="" class="Info">About</a>
+                <a href="" class="Info">My Account</a>
               </div>
             </div>
-            <div class="row g-3 aboutContainer">
-              <div class="col-md-6 h-100">
-                <div class="position-relative overflow-hidden">
-                  <picture
-                    ><img
-                      class="aboutImg"
-                      src="images/aboutPage/img2.png"
-                      alt="images/aboutPage/img2.png"
-                  /></picture>
-                  <button class="btn1 aboutBtn-modify position-absolute">
-                    Our Brands
-                  </button>
-                </div>
+            <div
+              class="row g-lg-5 g-3 accountWrapper column-gap-5 coulmn-gap-lg-0"
+            >
+              <div class="col-3">
+                <ul class="aside">
+                  <li><a class="productInfo" href="">Dashboard</a></li>
+                  <li><a class="productInfo" href="">Others</a></li>
+                  <li><a class="productInfo" href="">Donwloads </a></li>
+                  <li><a class="productInfo" href="">Addresses</a></li>
+                  <li><a class="productInfo" href="">Account details</a></li>
+                  <li><a class="productInfo" href="">Addresses</a></li>
+                </ul>
               </div>
-              <div class="col-md-6 h-100">
-                <div class="position-relative overflow-hidden">
-                  <picture
-                    ><img
-                      class="aboutImg"
-                      src="images/aboutPage/img1.png"
-                      alt="images/aboutPage/img1.png"
-                  /></picture>
-                  <button class="btn1 aboutBtn-modify position-absolute">
-                    Our Stores
-                  </button>
-                </div>
-              </div>
-            </div>
-            <h2 class="aboutDetails">
-              Orebi is one of the world’s leading ecommerce brands and is
-              internationally recognized for celebrating the essence of classic
-              Worldwide cool looking style.
-            </h2>
-            <div class="row g-3 gy-5">
-              <div class="col-lg-4 col-md-6">
-                <div>
-                  <h4 class="aboutDetailsHeading">Our Vision</h4>
-                  <p class="Info mt-2">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an printer
-                    took a galley of type and scrambled it to make a type
-                    specimen book.
+              <div class="col-7">
+                <div class="massage d-flex flex-column row-gap-lg-5 row-gap-3">
+                  <p class="productInfo">
+                    Hello <span class="footerTitle">admin</span> (not
+                    <span class="footerTitle">admin</span>
+                    <a class="link-modify" href="">Log out</a> )
                   </p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div>
-                  <h4 class="aboutDetailsHeading">Our Story</h4>
-                  <p class="Info mt-2">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an printer
-                    took a galley of type and scrambled it to make a type
-                    specimen book.
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div>
-                  <h4 class="aboutDetailsHeading">Our Brands</h4>
-                  <p class="Info mt-2">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an printer
-                    took a galley of type and scrambled it to make a type
-                    specimen book.
+                  <p class="productInfo">
+                    From your account dashboard you can view your
+                    <a class="link-modify" href="">recent orders</a>, manage
+                    your
+                    <a class="link-modify" href=""
+                      >shipping and billing addresses</a
+                    >
+                    , and <a class="link-modify" href="">edit</a> your
+                    <a class="link-modify" href=""
+                      >password and account details.</a
+                    >
                   </p>
                 </div>
               </div>
